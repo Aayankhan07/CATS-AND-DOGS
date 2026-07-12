@@ -1,0 +1,3602 @@
+[
+    {
+        "text": "The train to national park was delayed by 10 minutes.",
+        "label": 2
+    },
+    {
+        "text": "My puppy keeps wagging its tail at the cat.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some HTML code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "My dog keeps howling at the cat.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the canine using its leash?",
+        "label": 1
+    },
+    {
+        "text": "Our new cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some apples and bananas.",
+        "label": 2
+    },
+    {
+        "text": "I have a funny tomcat that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "She plays the piano extremely well.",
+        "label": 2
+    },
+    {
+        "text": "Felines like feline are known to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "A cute kitty is playing with ball of yarn.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about artificial intelligence.",
+        "label": 2
+    },
+    {
+        "text": "Felines like kitty are known to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "The retriever made a loud growl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Our new pup is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the pup using its harness?",
+        "label": 1
+    },
+    {
+        "text": "My cat keeps meowing all day.",
+        "label": 0
+    },
+    {
+        "text": "I love reading science fiction books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "I watched a fascinating documentary about space exploration.",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the cat its wet cat food?",
+        "label": 0
+    },
+    {
+        "text": "My retriever keeps howling at the fence.",
+        "label": 1
+    },
+    {
+        "text": "I have a funny retriever that loves to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the library next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "The tomcat made a soft purr when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "The cat is sleeping on the windowsill.",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the shepherd using its leash?",
+        "label": 1
+    },
+    {
+        "text": "I need to write some CSS code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very windy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Did you walk the dog using its leash?",
+        "label": 1
+    },
+    {
+        "text": "My retriever keeps barking at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I bought some laser pointer for the cat.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the national park next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very windy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "The train to museum was delayed by 30 minutes.",
+        "label": 2
+    },
+    {
+        "text": "The stray cat is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "The calico made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Canines like retriever are known to fetch tennis balls.",
+        "label": 1
+    },
+    {
+        "text": "Felines like feline are known to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "A cute kitty is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "Our new puppy is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "The shepherd is running around the park.",
+        "label": 1
+    },
+    {
+        "text": "I watched a fascinating documentary about artificial intelligence.",
+        "label": 2
+    },
+    {
+        "text": "The tomcat made a soft purr when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the mountains next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Felines like kitty are known to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "Our new hound is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "The stray cat is sleeping on the windowsill.",
+        "label": 0
+    },
+    {
+        "text": "Felines like calico are known to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "The dog made a loud whimper at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some JavaScript code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "I have a tiny cat that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "I bought some laser pointer for the kitty.",
+        "label": 0
+    },
+    {
+        "text": "This salad is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Our new hound is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the national park next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Our new mutt is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "I bought some catnip ball for the cat.",
+        "label": 0
+    },
+    {
+        "text": "The kitten made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about deep ocean biology.",
+        "label": 2
+    },
+    {
+        "text": "Do you want to play tennis after work today?",
+        "label": 2
+    },
+    {
+        "text": "My canine keeps wagging its tail at the stranger.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some coffee beans.",
+        "label": 2
+    },
+    {
+        "text": "Look at that playful tomcat sleeping on the chair.",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very warm and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the kitten its milk treats?",
+        "label": 0
+    },
+    {
+        "text": "The kitten is hissing at the shadow.",
+        "label": 0
+    },
+    {
+        "text": "The hound made a loud bark at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Do you want to play soccer after work today?",
+        "label": 2
+    },
+    {
+        "text": "Look at that playful dog sitting by the sofa.",
+        "label": 1
+    },
+    {
+        "text": "Look at that tiny canine sitting by the sofa.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some C++ code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very warm and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "The train to library was delayed by 60 minutes.",
+        "label": 2
+    },
+    {
+        "text": "The pup made a loud bark at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Canines like mutt are known to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some Next.js code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some coffee beans.",
+        "label": 2
+    },
+    {
+        "text": "Look at that playful puppy sitting by the table.",
+        "label": 1
+    },
+    {
+        "text": "I bought some catnip ball for the stray cat.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "Look at that lazy stray cat sleeping on the chair.",
+        "label": 0
+    },
+    {
+        "text": "I have a energetic kitten that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "A cute stray cat is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "Our new tomcat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "The kitten is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "Look at that sleepy kitty sleeping on the bed.",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the pup using its collar?",
+        "label": 1
+    },
+    {
+        "text": "I watched a fascinating documentary about deep ocean biology.",
+        "label": 2
+    },
+    {
+        "text": "I need to write some JavaScript code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "I have a small calico that loves to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "The stray cat made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Look at that small feline sleeping on the table.",
+        "label": 0
+    },
+    {
+        "text": "I have a small retriever that loves to fetch tennis balls.",
+        "label": 1
+    },
+    {
+        "text": "The weather today is very snowy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "My retriever keeps howling at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "She plays the violin extremely well.",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the stray cat its milk treats?",
+        "label": 0
+    },
+    {
+        "text": "The dog made a loud bark at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the museum next weekend.",
+        "label": 2
+    },
+    {
+        "text": "My kitten keeps scratching the carpet all day.",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "I love reading science fiction books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Felines like stray cat are known to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "The train to library was delayed by 45 minutes.",
+        "label": 2
+    },
+    {
+        "text": "A cute cat is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "I have a playful stray cat that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "The retriever is panting in the sun.",
+        "label": 1
+    },
+    {
+        "text": "My kitty keeps sleeping on my lap all day.",
+        "label": 0
+    },
+    {
+        "text": "I need to write some C++ code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Felines like cat are known to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very snowy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Our new stray cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "Felines like stray cat are known to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "I have a lazy canine that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "I have a playful puppy that loves to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "The kitten made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "I have a small calico that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about space exploration.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the national park next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very snowy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "The feline made a soft chirp when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "A friendly retriever is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "The retriever made a loud woof at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I bought some frisbee for the pup.",
+        "label": 1
+    },
+    {
+        "text": "The weather today is very windy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "I bought some feather wand for the cat.",
+        "label": 0
+    },
+    {
+        "text": "My dog keeps howling at the fence.",
+        "label": 1
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the museum next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I have a cute puppy that loves to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "Look at that funny stray cat sleeping on the sofa.",
+        "label": 0
+    },
+    {
+        "text": "This sushi is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Our new feline has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "The hound made a loud growl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "She plays the guitar extremely well.",
+        "label": 2
+    },
+    {
+        "text": "The calico made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Our new mutt is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Did you feed the cat its milk treats?",
+        "label": 0
+    },
+    {
+        "text": "Our new tomcat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "The train to museum was delayed by 60 minutes.",
+        "label": 2
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "Look at that energetic canine sitting by the rug.",
+        "label": 1
+    },
+    {
+        "text": "I bought some rubber bone for the pup.",
+        "label": 1
+    },
+    {
+        "text": "Our new retriever is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Our new cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "I have a tiny canine that loves to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the beach next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Look at that lazy tomcat sleeping on the bed.",
+        "label": 0
+    },
+    {
+        "text": "The train to library was delayed by 30 minutes.",
+        "label": 2
+    },
+    {
+        "text": "My puppy keeps howling at the fence.",
+        "label": 1
+    },
+    {
+        "text": "A friendly shepherd is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "Canines like dog are known to fetch tennis balls.",
+        "label": 1
+    },
+    {
+        "text": "I bought some feather wand for the tomcat.",
+        "label": 0
+    },
+    {
+        "text": "Felines like tomcat are known to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "My pup keeps chewing on bones at the cat.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the beach next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The pup made a loud howl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "A cute cat is playing with ball of yarn.",
+        "label": 0
+    },
+    {
+        "text": "Our new kitten has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "I bought some frisbee for the retriever.",
+        "label": 1
+    },
+    {
+        "text": "Look at that tiny feline sleeping on the table.",
+        "label": 0
+    },
+    {
+        "text": "My dog keeps wagging its tail at the squirrel.",
+        "label": 1
+    },
+    {
+        "text": "The train to beach was delayed by 45 minutes.",
+        "label": 2
+    },
+    {
+        "text": "The stray cat is hissing at the shadow.",
+        "label": 0
+    },
+    {
+        "text": "Our new retriever is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "I watched a fascinating documentary about deep ocean biology.",
+        "label": 2
+    },
+    {
+        "text": "Canines like canine are known to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "I bought some tennis ball for the puppy.",
+        "label": 1
+    },
+    {
+        "text": "Our new cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the library next weekend.",
+        "label": 2
+    },
+    {
+        "text": "This pizza is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Our new cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "I have a playful mutt that loves to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "A cute tomcat is playing with laser pointer.",
+        "label": 0
+    },
+    {
+        "text": "The train to beach was delayed by 60 minutes.",
+        "label": 2
+    },
+    {
+        "text": "Did you walk the canine using its collar?",
+        "label": 1
+    },
+    {
+        "text": "I need to write some C++ code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "I bought some ball of yarn for the kitten.",
+        "label": 0
+    },
+    {
+        "text": "This burger is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "The cat is chasing a toy mouse.",
+        "label": 0
+    },
+    {
+        "text": "A friendly pup is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "A cute kitten is playing with ball of yarn.",
+        "label": 0
+    },
+    {
+        "text": "I need to write some CSS code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "I watched a fascinating documentary about space exploration.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the national park next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The cat is hissing at the shadow.",
+        "label": 0
+    },
+    {
+        "text": "I need to write some HTML code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "This salad is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some apples and bananas.",
+        "label": 2
+    },
+    {
+        "text": "The retriever made a loud whimper at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "The feline made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Our new cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "A friendly canine is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "I have a funny pup that loves to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some coffee beans.",
+        "label": 2
+    },
+    {
+        "text": "The pup made a loud woof at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I love reading history books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "A friendly puppy is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "Our new calico has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "A cute feline is playing with ball of yarn.",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some coffee beans.",
+        "label": 2
+    },
+    {
+        "text": "The canine is panting in the sun.",
+        "label": 1
+    },
+    {
+        "text": "I bought some feather wand for the cat.",
+        "label": 0
+    },
+    {
+        "text": "A friendly hound is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "The tomcat made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Our new dog is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "She plays the drums extremely well.",
+        "label": 2
+    },
+    {
+        "text": "Did you walk the canine using its harness?",
+        "label": 1
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "The shepherd made a loud howl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Canines like puppy are known to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "Did you feed the tomcat its milk treats?",
+        "label": 0
+    },
+    {
+        "text": "Felines like calico are known to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "I have a energetic shepherd that loves to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "The hound made a loud howl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I have a sleepy kitten that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "Look at that playful puppy sitting by the windowsill.",
+        "label": 1
+    },
+    {
+        "text": "A cute kitten is playing with feather wand.",
+        "label": 0
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Look at that energetic retriever sitting by the chair.",
+        "label": 1
+    },
+    {
+        "text": "Look at that cute kitten sleeping on the windowsill.",
+        "label": 0
+    },
+    {
+        "text": "I need to write some C++ code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "A friendly pup is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "Our new feline has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "I have a fluffy tomcat that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very chilly and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "The train to museum was delayed by 10 minutes.",
+        "label": 2
+    },
+    {
+        "text": "The retriever is panting in the sun.",
+        "label": 1
+    },
+    {
+        "text": "I love reading science fiction books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "This salad is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Our new canine is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the beach next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The dog is barking at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I bought some rubber bone for the hound.",
+        "label": 1
+    },
+    {
+        "text": "I watched a fascinating documentary about space exploration.",
+        "label": 2
+    },
+    {
+        "text": "The retriever made a loud woof at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the national park next weekend.",
+        "label": 2
+    },
+    {
+        "text": "My mutt keeps chewing on bones at the squirrel.",
+        "label": 1
+    },
+    {
+        "text": "I love reading mystery books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "My retriever keeps barking at the fence.",
+        "label": 1
+    },
+    {
+        "text": "My feline keeps sleeping on my lap all day.",
+        "label": 0
+    },
+    {
+        "text": "Canines like shepherd are known to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "A friendly hound is chasing the squeaky toy.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some CSS code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Our new mutt is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some CSS code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "She plays the piano extremely well.",
+        "label": 2
+    },
+    {
+        "text": "She plays the guitar extremely well.",
+        "label": 2
+    },
+    {
+        "text": "My feline keeps scratching the carpet all day.",
+        "label": 0
+    },
+    {
+        "text": "Look at that playful shepherd sitting by the rug.",
+        "label": 1
+    },
+    {
+        "text": "She plays the violin extremely well.",
+        "label": 2
+    },
+    {
+        "text": "I have a tiny feline that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "The kitty made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "I love reading fantasy books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "I love reading mystery books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "The hound is digging a hole in the lawn.",
+        "label": 1
+    },
+    {
+        "text": "The retriever made a loud whimper at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I have a playful tomcat that loves to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "Canines like pup are known to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "My hound keeps wagging its tail at the cat.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some coffee beans.",
+        "label": 2
+    },
+    {
+        "text": "The stray cat made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "The tomcat is chasing a toy mouse.",
+        "label": 0
+    },
+    {
+        "text": "The stray cat made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very warm and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Felines like kitten are known to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "I bought some ball of yarn for the kitty.",
+        "label": 0
+    },
+    {
+        "text": "I have a energetic stray cat that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some milk and eggs.",
+        "label": 2
+    },
+    {
+        "text": "She plays the piano extremely well.",
+        "label": 2
+    },
+    {
+        "text": "This pizza is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Our new cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the national park next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I bought some squeaky toy for the dog.",
+        "label": 1
+    },
+    {
+        "text": "She plays the piano extremely well.",
+        "label": 2
+    },
+    {
+        "text": "The shepherd is barking at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "My mutt keeps growling at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "My dog keeps howling at the cat.",
+        "label": 1
+    },
+    {
+        "text": "I have a energetic dog that loves to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "She plays the violin extremely well.",
+        "label": 2
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "I have a small dog that loves to fetch tennis balls.",
+        "label": 1
+    },
+    {
+        "text": "The kitten made a soft chirp when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the city center next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the kitty its milk treats?",
+        "label": 0
+    },
+    {
+        "text": "The cat made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Look at that playful stray cat sleeping on the table.",
+        "label": 0
+    },
+    {
+        "text": "Our new feline has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "The hound made a loud woof at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "The hound made a loud woof at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "She plays the violin extremely well.",
+        "label": 2
+    },
+    {
+        "text": "The pup is running around the park.",
+        "label": 1
+    },
+    {
+        "text": "Look at that fluffy canine sitting by the rug.",
+        "label": 1
+    },
+    {
+        "text": "A cute calico is playing with ball of yarn.",
+        "label": 0
+    },
+    {
+        "text": "Look at that lazy shepherd sitting by the windowsill.",
+        "label": 1
+    },
+    {
+        "text": "My calico keeps scratching the carpet all day.",
+        "label": 0
+    },
+    {
+        "text": "Look at that playful mutt sitting by the windowsill.",
+        "label": 1
+    },
+    {
+        "text": "Did you feed the kitten its milk treats?",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "Our new kitty has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play baseball after work today?",
+        "label": 2
+    },
+    {
+        "text": "Canines like puppy are known to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "Do you want to play football after work today?",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the kitty its salmon kibble?",
+        "label": 0
+    },
+    {
+        "text": "Look at that cute mutt sitting by the table.",
+        "label": 1
+    },
+    {
+        "text": "I have a funny kitty that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "This burger is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Felines like calico are known to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "The kitten made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "My kitty keeps scratching the carpet all day.",
+        "label": 0
+    },
+    {
+        "text": "The kitten made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "I bought some ball of yarn for the feline.",
+        "label": 0
+    },
+    {
+        "text": "This sushi is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "I need to write some C++ code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Felines like kitten are known to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "Look at that energetic puppy sitting by the rug.",
+        "label": 1
+    },
+    {
+        "text": "A cute kitty is playing with laser pointer.",
+        "label": 0
+    },
+    {
+        "text": "The dog made a loud growl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "My feline keeps scratching the carpet all day.",
+        "label": 0
+    },
+    {
+        "text": "I bought some squeaky toy for the puppy.",
+        "label": 1
+    },
+    {
+        "text": "My kitty keeps scratching the carpet all day.",
+        "label": 0
+    },
+    {
+        "text": "I bought some catnip ball for the stray cat.",
+        "label": 0
+    },
+    {
+        "text": "I bought some ball of yarn for the kitty.",
+        "label": 0
+    },
+    {
+        "text": "My kitty keeps pouncing all day.",
+        "label": 0
+    },
+    {
+        "text": "I bought some tennis ball for the retriever.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the beach next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I bought some rubber bone for the pup.",
+        "label": 1
+    },
+    {
+        "text": "I love reading mystery books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "A cute cat is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "A friendly canine is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "I have a lazy cat that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "Look at that fluffy pup sitting by the sofa.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some Next.js code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Our new pup is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Felines like cat are known to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "Our new puppy is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "The calico made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "My pup keeps howling at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the city center next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I bought some squeaky toy for the retriever.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the city center next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "A friendly pup is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "The kitty is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "My kitty keeps purring all day.",
+        "label": 0
+    },
+    {
+        "text": "I love reading fantasy books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "The kitten is sleeping on the windowsill.",
+        "label": 0
+    },
+    {
+        "text": "This pasta is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the library next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I have a energetic shepherd that loves to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "Our new stray cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play soccer after work today?",
+        "label": 2
+    },
+    {
+        "text": "My retriever keeps chewing on bones at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the shepherd using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "My kitty keeps sleeping on my lap all day.",
+        "label": 0
+    },
+    {
+        "text": "My feline keeps pouncing all day.",
+        "label": 0
+    },
+    {
+        "text": "Our new pup is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "I bought some rubber bone for the hound.",
+        "label": 1
+    },
+    {
+        "text": "I bought some rubber bone for the puppy.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the canine using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "The mutt made a loud bark at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Canines like canine are known to fetch tennis balls.",
+        "label": 1
+    },
+    {
+        "text": "The retriever made a loud whimper at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "My feline keeps sleeping on my lap all day.",
+        "label": 0
+    },
+    {
+        "text": "Canines like dog are known to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some coffee beans.",
+        "label": 2
+    },
+    {
+        "text": "Canines like puppy are known to fetch tennis balls.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the pup using its collar?",
+        "label": 1
+    },
+    {
+        "text": "Our new mutt is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Our new mutt is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the pup using its collar?",
+        "label": 1
+    },
+    {
+        "text": "I love reading mystery books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "My canine keeps wagging its tail at the fence.",
+        "label": 1
+    },
+    {
+        "text": "The shepherd made a loud bark at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "The weather today is very snowy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "My hound keeps wagging its tail at the squirrel.",
+        "label": 1
+    },
+    {
+        "text": "Our new dog is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "She plays the piano extremely well.",
+        "label": 2
+    },
+    {
+        "text": "I have a playful pup that loves to fetch tennis balls.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some Next.js code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "The train to museum was delayed by 30 minutes.",
+        "label": 2
+    },
+    {
+        "text": "I love reading mystery books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "The pup made a loud woof at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "The train to city center was delayed by 30 minutes.",
+        "label": 2
+    },
+    {
+        "text": "The mutt made a loud growl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the beach next weekend.",
+        "label": 2
+    },
+    {
+        "text": "This soup is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "My cat keeps sleeping on my lap all day.",
+        "label": 0
+    },
+    {
+        "text": "Our new kitten has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "I have a fluffy kitty that loves to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "A cute feline is playing with feather wand.",
+        "label": 0
+    },
+    {
+        "text": "She plays the violin extremely well.",
+        "label": 2
+    },
+    {
+        "text": "The mutt made a loud whimper at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I have a fluffy kitty that loves to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play tennis after work today?",
+        "label": 2
+    },
+    {
+        "text": "I bought some rubber bone for the retriever.",
+        "label": 1
+    },
+    {
+        "text": "A friendly shepherd is chasing the frisbee.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some HTML code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very warm and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "This burger is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Canines like puppy are known to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "Do you want to play chess after work today?",
+        "label": 2
+    },
+    {
+        "text": "I bought some frisbee for the shepherd.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the shepherd using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "Did you feed the stray cat its milk treats?",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the hound using its leash?",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the hound using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "The weather today is very cloudy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "I have a lazy dog that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "Felines like feline are known to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "My puppy keeps chewing on bones at the cat.",
+        "label": 1
+    },
+    {
+        "text": "My kitten keeps scratching the carpet all day.",
+        "label": 0
+    },
+    {
+        "text": "The feline made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "The calico made a soft purr when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the pup using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "This pizza is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "I have a playful cat that loves to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "Look at that lazy canine sitting by the chair.",
+        "label": 1
+    },
+    {
+        "text": "The stray cat made a soft chirp when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Did you feed the kitty its wet cat food?",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very snowy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "I bought some feather wand for the kitten.",
+        "label": 0
+    },
+    {
+        "text": "My retriever keeps howling at the fence.",
+        "label": 1
+    },
+    {
+        "text": "I have a funny dog that loves to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "A cute cat is playing with feather wand.",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very windy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Do you want to play football after work today?",
+        "label": 2
+    },
+    {
+        "text": "Do you want to play soccer after work today?",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very cloudy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "The train to museum was delayed by 10 minutes.",
+        "label": 2
+    },
+    {
+        "text": "Felines like cat are known to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about artificial intelligence.",
+        "label": 2
+    },
+    {
+        "text": "The calico made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "The mutt is running around the park.",
+        "label": 1
+    },
+    {
+        "text": "A cute calico is playing with feather wand.",
+        "label": 0
+    },
+    {
+        "text": "I have a sleepy tomcat that loves to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "I have a cute dog that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some HTML code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "I have a sleepy calico that loves to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "I bought some laser pointer for the kitten.",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the mutt using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "Felines like calico are known to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about artificial intelligence.",
+        "label": 2
+    },
+    {
+        "text": "Look at that cute kitty sleeping on the windowsill.",
+        "label": 0
+    },
+    {
+        "text": "The cat is chasing a toy mouse.",
+        "label": 0
+    },
+    {
+        "text": "I bought some rubber bone for the dog.",
+        "label": 1
+    },
+    {
+        "text": "I bought some squeaky toy for the shepherd.",
+        "label": 1
+    },
+    {
+        "text": "A friendly canine is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "The cat is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some apples and bananas.",
+        "label": 2
+    },
+    {
+        "text": "The train to national park was delayed by 45 minutes.",
+        "label": 2
+    },
+    {
+        "text": "A friendly canine is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "Felines like stray cat are known to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "I need to write some Next.js code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "My tomcat keeps pouncing all day.",
+        "label": 0
+    },
+    {
+        "text": "My dog keeps howling at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "The train to beach was delayed by 10 minutes.",
+        "label": 2
+    },
+    {
+        "text": "Our new stray cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the museum next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The pup is digging a hole in the lawn.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the city center next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very chilly and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Felines like cat are known to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "I have a tiny puppy that loves to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "I have a tiny canine that loves to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "Our new dog is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "A cute kitten is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "The shepherd is panting in the sun.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the dog using its harness?",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some milk and eggs.",
+        "label": 2
+    },
+    {
+        "text": "Our new pup is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Our new cat has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "Look at that sleepy retriever sitting by the chair.",
+        "label": 1
+    },
+    {
+        "text": "I bought some feather wand for the cat.",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the canine using its leash?",
+        "label": 1
+    },
+    {
+        "text": "My stray cat keeps pouncing all day.",
+        "label": 0
+    },
+    {
+        "text": "I have a playful kitty that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "The canine is barking at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I have a sleepy kitty that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "The feline made a soft chirp when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "The kitten made a soft purr when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Did you feed the tomcat its wet cat food?",
+        "label": 0
+    },
+    {
+        "text": "I bought some ball of yarn for the kitten.",
+        "label": 0
+    },
+    {
+        "text": "The hound is running around the park.",
+        "label": 1
+    },
+    {
+        "text": "The kitten made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the shepherd using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "My mutt keeps chewing on bones at the squirrel.",
+        "label": 1
+    },
+    {
+        "text": "She plays the drums extremely well.",
+        "label": 2
+    },
+    {
+        "text": "My puppy keeps barking at the squirrel.",
+        "label": 1
+    },
+    {
+        "text": "I have a funny kitty that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "Felines like feline are known to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "Our new calico has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "My canine keeps howling at the fence.",
+        "label": 1
+    },
+    {
+        "text": "A cute cat is playing with laser pointer.",
+        "label": 0
+    },
+    {
+        "text": "I bought some feather wand for the feline.",
+        "label": 0
+    },
+    {
+        "text": "Look at that small mutt sitting by the bed.",
+        "label": 1
+    },
+    {
+        "text": "The shepherd is barking at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I bought some laser pointer for the feline.",
+        "label": 0
+    },
+    {
+        "text": "I love reading history books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Look at that lazy calico sleeping on the rug.",
+        "label": 0
+    },
+    {
+        "text": "The train to beach was delayed by 15 minutes.",
+        "label": 2
+    },
+    {
+        "text": "She plays the flute extremely well.",
+        "label": 2
+    },
+    {
+        "text": "The dog made a loud whimper at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I love reading history books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the stray cat its milk treats?",
+        "label": 0
+    },
+    {
+        "text": "A cute calico is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "I have a playful tomcat that loves to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play soccer after work today?",
+        "label": 2
+    },
+    {
+        "text": "I have a fluffy hound that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the mountains next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Look at that small puppy sitting by the chair.",
+        "label": 1
+    },
+    {
+        "text": "I bought some catnip ball for the feline.",
+        "label": 0
+    },
+    {
+        "text": "Felines like feline are known to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "A cute kitten is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the city center next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I bought some feather wand for the tomcat.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about deep ocean biology.",
+        "label": 2
+    },
+    {
+        "text": "I watched a fascinating documentary about artificial intelligence.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very windy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very chilly and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "I bought some frisbee for the retriever.",
+        "label": 1
+    },
+    {
+        "text": "Look at that cute canine sitting by the sofa.",
+        "label": 1
+    },
+    {
+        "text": "This burger is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Look at that playful pup sitting by the table.",
+        "label": 1
+    },
+    {
+        "text": "I love reading history books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some apples and bananas.",
+        "label": 2
+    },
+    {
+        "text": "The shepherd made a loud howl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I have a lazy calico that loves to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "I need to write some CSS code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "I have a funny stray cat that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "Look at that energetic puppy sitting by the chair.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the beach next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Canines like canine are known to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "This salad is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "I bought some frisbee for the dog.",
+        "label": 1
+    },
+    {
+        "text": "The mutt made a loud woof at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "The kitty is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "I bought some rubber bone for the mutt.",
+        "label": 1
+    },
+    {
+        "text": "Did you feed the stray cat its tuna fish?",
+        "label": 0
+    },
+    {
+        "text": "My cat keeps meowing all day.",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very sunny and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the calico its salmon kibble?",
+        "label": 0
+    },
+    {
+        "text": "Felines like tomcat are known to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very rainy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "I have a playful calico that loves to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "I have a cute retriever that loves to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "My hound keeps wagging its tail at the fence.",
+        "label": 1
+    },
+    {
+        "text": "I bought some ball of yarn for the stray cat.",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "My kitten keeps purring all day.",
+        "label": 0
+    },
+    {
+        "text": "I bought some ball of yarn for the tomcat.",
+        "label": 0
+    },
+    {
+        "text": "She plays the guitar extremely well.",
+        "label": 2
+    },
+    {
+        "text": "A cute kitten is playing with ball of yarn.",
+        "label": 0
+    },
+    {
+        "text": "I need to write some Next.js code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "This pasta is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "I need to write some Next.js code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Did you walk the canine using its harness?",
+        "label": 1
+    },
+    {
+        "text": "I have a energetic mutt that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "I bought some catnip ball for the calico.",
+        "label": 0
+    },
+    {
+        "text": "I have a cute feline that loves to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "I love reading mystery books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "She plays the drums extremely well.",
+        "label": 2
+    },
+    {
+        "text": "I bought some catnip ball for the kitten.",
+        "label": 0
+    },
+    {
+        "text": "I bought some tennis ball for the dog.",
+        "label": 1
+    },
+    {
+        "text": "I bought some feather wand for the cat.",
+        "label": 0
+    },
+    {
+        "text": "I love reading science fiction books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Look at that tiny mutt sitting by the bed.",
+        "label": 1
+    },
+    {
+        "text": "The stray cat is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the national park next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I watched a fascinating documentary about artificial intelligence.",
+        "label": 2
+    },
+    {
+        "text": "The calico made a soft purr when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play baseball after work today?",
+        "label": 2
+    },
+    {
+        "text": "I have a playful kitten that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some apples and bananas.",
+        "label": 2
+    },
+    {
+        "text": "I need to write some HTML code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Look at that playful pup sitting by the sofa.",
+        "label": 1
+    },
+    {
+        "text": "She plays the flute extremely well.",
+        "label": 2
+    },
+    {
+        "text": "The stray cat is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "I bought some feather wand for the feline.",
+        "label": 0
+    },
+    {
+        "text": "I have a small retriever that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the mountains next weekend.",
+        "label": 2
+    },
+    {
+        "text": "A cute cat is playing with ball of yarn.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the national park next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The dog is panting in the sun.",
+        "label": 1
+    },
+    {
+        "text": "I have a cute canine that loves to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "The stray cat is chasing a toy mouse.",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very warm and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Do you want to play basketball after work today?",
+        "label": 2
+    },
+    {
+        "text": "I love reading mystery books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "I have a energetic feline that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "Our new puppy is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some JavaScript code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Do you want to play baseball after work today?",
+        "label": 2
+    },
+    {
+        "text": "I love reading fantasy books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the library next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I bought some tennis ball for the dog.",
+        "label": 1
+    },
+    {
+        "text": "The kitty is hissing at the shadow.",
+        "label": 0
+    },
+    {
+        "text": "I bought some catnip ball for the kitten.",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the shepherd using its leash?",
+        "label": 1
+    },
+    {
+        "text": "The stray cat is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the library next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Our new canine is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "The canine is barking at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I have a small kitten that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "Our new hound is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "A cute stray cat is playing with feather wand.",
+        "label": 0
+    },
+    {
+        "text": "I have a lazy shepherd that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "Did you feed the calico its milk treats?",
+        "label": 0
+    },
+    {
+        "text": "I need to write some HTML code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Canines like dog are known to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Do you want to play football after work today?",
+        "label": 2
+    },
+    {
+        "text": "She plays the piano extremely well.",
+        "label": 2
+    },
+    {
+        "text": "Look at that playful feline sleeping on the sofa.",
+        "label": 0
+    },
+    {
+        "text": "A friendly mutt is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "The kitten is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "The pup made a loud woof at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "I need to write some Python code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Felines like tomcat are known to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "Our new calico has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "I have a lazy calico that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "The shepherd made a loud growl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "She plays the flute extremely well.",
+        "label": 2
+    },
+    {
+        "text": "I bought some rubber bone for the hound.",
+        "label": 1
+    },
+    {
+        "text": "A cute calico is playing with laser pointer.",
+        "label": 0
+    },
+    {
+        "text": "I need to write some JavaScript code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some apples and bananas.",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the feline its wet cat food?",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the canine using its collar?",
+        "label": 1
+    },
+    {
+        "text": "I have a cute stray cat that loves to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the mountains next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the beach next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some milk and eggs.",
+        "label": 2
+    },
+    {
+        "text": "A friendly dog is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "Look at that sleepy hound sitting by the rug.",
+        "label": 1
+    },
+    {
+        "text": "My feline keeps pouncing all day.",
+        "label": 0
+    },
+    {
+        "text": "Our new hound is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Do you want to play baseball after work today?",
+        "label": 2
+    },
+    {
+        "text": "Our new feline has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the city center next weekend.",
+        "label": 2
+    },
+    {
+        "text": "A cute feline is playing with laser pointer.",
+        "label": 0
+    },
+    {
+        "text": "Look at that fluffy tomcat sleeping on the windowsill.",
+        "label": 0
+    },
+    {
+        "text": "The canine made a loud growl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "My calico keeps purring all day.",
+        "label": 0
+    },
+    {
+        "text": "A cute cat is playing with laser pointer.",
+        "label": 0
+    },
+    {
+        "text": "Did you feed the stray cat its salmon kibble?",
+        "label": 0
+    },
+    {
+        "text": "I bought some ball of yarn for the feline.",
+        "label": 0
+    },
+    {
+        "text": "Felines like kitten are known to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "I bought some laser pointer for the calico.",
+        "label": 0
+    },
+    {
+        "text": "Our new dog is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "A friendly canine is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "The train to beach was delayed by 30 minutes.",
+        "label": 2
+    },
+    {
+        "text": "My canine keeps wagging its tail at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "The retriever is running around the park.",
+        "label": 1
+    },
+    {
+        "text": "I bought some laser pointer for the kitty.",
+        "label": 0
+    },
+    {
+        "text": "Look at that lazy pup sitting by the table.",
+        "label": 1
+    },
+    {
+        "text": "The train to mountains was delayed by 45 minutes.",
+        "label": 2
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "A cute cat is playing with ball of yarn.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the national park next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The train to mountains was delayed by 15 minutes.",
+        "label": 2
+    },
+    {
+        "text": "I have a lazy feline that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "I have a sleepy retriever that loves to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the library next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Look at that tiny cat sleeping on the table.",
+        "label": 0
+    },
+    {
+        "text": "A friendly hound is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "I have a small stray cat that loves to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "The stray cat made a soft hiss when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "The weather today is very cloudy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "I have a funny kitty that loves to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "This soup is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "This sushi is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Canines like shepherd are known to chew on chew-toys.",
+        "label": 1
+    },
+    {
+        "text": "A friendly shepherd is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "The weather today is very snowy and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "Look at that fluffy shepherd sitting by the sofa.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some C++ code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "This pizza is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Look at that sleepy canine sitting by the chair.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some JavaScript code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very sunny and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "This burger is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "The kitten made a soft purr when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "A cute kitty is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play chess after work today?",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the library next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Canines like mutt are known to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "The stray cat made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "The calico is hissing at the shadow.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about space exploration.",
+        "label": 2
+    },
+    {
+        "text": "I have a sleepy stray cat that loves to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "My canine keeps chewing on bones at the squirrel.",
+        "label": 1
+    },
+    {
+        "text": "Did you feed the feline its salmon kibble?",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the mountains next weekend.",
+        "label": 2
+    },
+    {
+        "text": "This salad is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "This pizza is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "My puppy keeps barking at the fence.",
+        "label": 1
+    },
+    {
+        "text": "She plays the flute extremely well.",
+        "label": 2
+    },
+    {
+        "text": "She plays the flute extremely well.",
+        "label": 2
+    },
+    {
+        "text": "The weather today is very chilly and pleasant.",
+        "label": 2
+    },
+    {
+        "text": "A friendly mutt is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "A friendly dog is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "Look at that sleepy tomcat sleeping on the table.",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some apples and bananas.",
+        "label": 2
+    },
+    {
+        "text": "My cat keeps purring all day.",
+        "label": 0
+    },
+    {
+        "text": "My calico keeps pouncing all day.",
+        "label": 0
+    },
+    {
+        "text": "I bought some tennis ball for the canine.",
+        "label": 1
+    },
+    {
+        "text": "I have a sleepy canine that loves to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some C++ code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "I bought some catnip ball for the cat.",
+        "label": 0
+    },
+    {
+        "text": "Felines like feline are known to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "Let's go to the store to buy some milk and eggs.",
+        "label": 2
+    },
+    {
+        "text": "The canine made a loud bark at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the pup using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "My tomcat keeps scratching the carpet all day.",
+        "label": 0
+    },
+    {
+        "text": "A friendly shepherd is chasing the frisbee.",
+        "label": 1
+    },
+    {
+        "text": "My kitten keeps pouncing all day.",
+        "label": 0
+    },
+    {
+        "text": "I have a energetic retriever that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "A friendly retriever is chasing the squeaky toy.",
+        "label": 1
+    },
+    {
+        "text": "Look at that lazy calico sleeping on the sofa.",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the retriever using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "This burger is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the library next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I need to write some CSS code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "A friendly retriever is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "Look at that small cat sleeping on the sofa.",
+        "label": 0
+    },
+    {
+        "text": "My puppy keeps wagging its tail at the fence.",
+        "label": 1
+    },
+    {
+        "text": "Look at that tiny tomcat sleeping on the table.",
+        "label": 0
+    },
+    {
+        "text": "I have a funny cat that loves to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "Our new kitty has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play football after work today?",
+        "label": 2
+    },
+    {
+        "text": "I have a tiny retriever that loves to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "I bought some catnip ball for the feline.",
+        "label": 0
+    },
+    {
+        "text": "Our new feline has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "The mutt made a loud bark at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "Look at that energetic retriever sitting by the windowsill.",
+        "label": 1
+    },
+    {
+        "text": "Canines like pup are known to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "Do you want to play tennis after work today?",
+        "label": 2
+    },
+    {
+        "text": "I love reading science fiction books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Did you walk the canine using its collar?",
+        "label": 1
+    },
+    {
+        "text": "Felines like calico are known to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the dog using its leash?",
+        "label": 1
+    },
+    {
+        "text": "I bought some frisbee for the shepherd.",
+        "label": 1
+    },
+    {
+        "text": "Our new kitten has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "Felines like tomcat are known to chase lasers.",
+        "label": 0
+    },
+    {
+        "text": "Look at that lazy puppy sitting by the bed.",
+        "label": 1
+    },
+    {
+        "text": "Felines like kitty are known to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "Look at that tiny puppy sitting by the table.",
+        "label": 1
+    },
+    {
+        "text": "She plays the guitar extremely well.",
+        "label": 2
+    },
+    {
+        "text": "A cute cat is playing with laser pointer.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about space exploration.",
+        "label": 2
+    },
+    {
+        "text": "The tomcat is hissing at the shadow.",
+        "label": 0
+    },
+    {
+        "text": "I bought some rubber bone for the pup.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the library next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The calico is sleeping on the windowsill.",
+        "label": 0
+    },
+    {
+        "text": "A friendly hound is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "I bought some tennis ball for the retriever.",
+        "label": 1
+    },
+    {
+        "text": "Look at that small kitten sleeping on the bed.",
+        "label": 0
+    },
+    {
+        "text": "Felines like kitty are known to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "I need to write some Python code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the museum next weekend.",
+        "label": 2
+    },
+    {
+        "text": "The calico is hissing at the shadow.",
+        "label": 0
+    },
+    {
+        "text": "My shepherd keeps chewing on bones at the fence.",
+        "label": 1
+    },
+    {
+        "text": "I have a lazy calico that loves to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "The kitty is curled up in a ball.",
+        "label": 0
+    },
+    {
+        "text": "A friendly puppy is chasing the squeaky toy.",
+        "label": 1
+    },
+    {
+        "text": "The shepherd made a loud growl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "The pup is panting in the sun.",
+        "label": 1
+    },
+    {
+        "text": "I love reading history books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "I bought some frisbee for the hound.",
+        "label": 1
+    },
+    {
+        "text": "This sushi is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "Canines like dog are known to fetch tennis balls.",
+        "label": 1
+    },
+    {
+        "text": "The puppy is running around the park.",
+        "label": 1
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "My tomcat keeps sleeping on my lap all day.",
+        "label": 0
+    },
+    {
+        "text": "Look at that sleepy stray cat sleeping on the bed.",
+        "label": 0
+    },
+    {
+        "text": "Look at that funny cat sleeping on the table.",
+        "label": 0
+    },
+    {
+        "text": "I have a small kitten that loves to groom itself.",
+        "label": 0
+    },
+    {
+        "text": "Look at that playful shepherd sitting by the bed.",
+        "label": 1
+    },
+    {
+        "text": "I bought some frisbee for the retriever.",
+        "label": 1
+    },
+    {
+        "text": "The tomcat is chasing a toy mouse.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play basketball after work today?",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the calico its wet cat food?",
+        "label": 0
+    },
+    {
+        "text": "Canines like dog are known to fetch tennis balls.",
+        "label": 1
+    },
+    {
+        "text": "My stray cat keeps pouncing all day.",
+        "label": 0
+    },
+    {
+        "text": "Canines like hound are known to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "I bought some frisbee for the retriever.",
+        "label": 1
+    },
+    {
+        "text": "Look at that energetic tomcat sleeping on the chair.",
+        "label": 0
+    },
+    {
+        "text": "Our new dog is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Do you want to play baseball after work today?",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "This burger is absolutely delicious and fresh.",
+        "label": 2
+    },
+    {
+        "text": "A cute calico is playing with laser pointer.",
+        "label": 0
+    },
+    {
+        "text": "My kitty keeps pouncing all day.",
+        "label": 0
+    },
+    {
+        "text": "I bought some tennis ball for the mutt.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the hound using its collar?",
+        "label": 1
+    },
+    {
+        "text": "Look at that small mutt sitting by the table.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the mountains next weekend.",
+        "label": 2
+    },
+    {
+        "text": "Our new shepherd is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "I bought some squeaky toy for the hound.",
+        "label": 1
+    },
+    {
+        "text": "I have a small shepherd that loves to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "I bought some catnip ball for the feline.",
+        "label": 0
+    },
+    {
+        "text": "The canine made a loud woof at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "Our new calico has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "I bought some rubber bone for the pup.",
+        "label": 1
+    },
+    {
+        "text": "The train to library was delayed by 15 minutes.",
+        "label": 2
+    },
+    {
+        "text": "I need to write some JavaScript code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "Canines like puppy are known to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "The train to city center was delayed by 15 minutes.",
+        "label": 2
+    },
+    {
+        "text": "I love reading fantasy books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Felines like tomcat are known to hunt mice.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play football after work today?",
+        "label": 2
+    },
+    {
+        "text": "I have a fluffy hound that loves to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "I bought some frisbee for the dog.",
+        "label": 1
+    },
+    {
+        "text": "I have a funny dog that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "Our new feline has beautiful whiskers and paws.",
+        "label": 0
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "A friendly canine is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "Canines like puppy are known to bark at strangers.",
+        "label": 1
+    },
+    {
+        "text": "The train to library was delayed by 45 minutes.",
+        "label": 2
+    },
+    {
+        "text": "She plays the drums extremely well.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some bread and butter.",
+        "label": 2
+    },
+    {
+        "text": "The feline made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "We are planning a trip to the beach next weekend.",
+        "label": 2
+    },
+    {
+        "text": "She plays the flute extremely well.",
+        "label": 2
+    },
+    {
+        "text": "Do you want to play basketball after work today?",
+        "label": 2
+    },
+    {
+        "text": "I bought some feather wand for the stray cat.",
+        "label": 0
+    },
+    {
+        "text": "A friendly puppy is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "I bought some rubber bone for the hound.",
+        "label": 1
+    },
+    {
+        "text": "I have a tiny canine that loves to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "Look at that small tomcat sleeping on the chair.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play baseball after work today?",
+        "label": 2
+    },
+    {
+        "text": "I watched a fascinating documentary about climate change.",
+        "label": 2
+    },
+    {
+        "text": "The calico made a soft chirp when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "I bought some rubber bone for the puppy.",
+        "label": 1
+    },
+    {
+        "text": "Canines like shepherd are known to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "I love reading science fiction books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "The dog made a loud howl at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I bought some tennis ball for the puppy.",
+        "label": 1
+    },
+    {
+        "text": "I bought some feather wand for the calico.",
+        "label": 0
+    },
+    {
+        "text": "The mutt is barking at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "My dog keeps barking at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "Look at that fluffy dog sitting by the chair.",
+        "label": 1
+    },
+    {
+        "text": "We are planning a trip to the museum next weekend.",
+        "label": 2
+    },
+    {
+        "text": "My canine keeps howling at the mailman.",
+        "label": 1
+    },
+    {
+        "text": "I love reading biography books in the evening.",
+        "label": 2
+    },
+    {
+        "text": "Did you walk the retriever using its harness?",
+        "label": 1
+    },
+    {
+        "text": "The stray cat made a soft purr when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "My mutt keeps barking at the squirrel.",
+        "label": 1
+    },
+    {
+        "text": "She plays the piano extremely well.",
+        "label": 2
+    },
+    {
+        "text": "Did you feed the cat its salmon kibble?",
+        "label": 0
+    },
+    {
+        "text": "Did you walk the retriever using its muzzle?",
+        "label": 1
+    },
+    {
+        "text": "I need to write some Next.js code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "I need to write some Python code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "We are planning a trip to the beach next weekend.",
+        "label": 2
+    },
+    {
+        "text": "I bought some laser pointer for the kitty.",
+        "label": 0
+    },
+    {
+        "text": "Our new shepherd is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "Did you walk the shepherd using its collar?",
+        "label": 1
+    },
+    {
+        "text": "She plays the drums extremely well.",
+        "label": 2
+    },
+    {
+        "text": "I have a energetic tomcat that loves to purr and cuddle.",
+        "label": 0
+    },
+    {
+        "text": "Our new retriever is wagging its tail and licking my face.",
+        "label": 1
+    },
+    {
+        "text": "She plays the violin extremely well.",
+        "label": 2
+    },
+    {
+        "text": "She plays the drums extremely well.",
+        "label": 2
+    },
+    {
+        "text": "Look at that fluffy feline sleeping on the bed.",
+        "label": 0
+    },
+    {
+        "text": "Do you want to play tennis after work today?",
+        "label": 2
+    },
+    {
+        "text": "A cute cat is playing with ball of yarn.",
+        "label": 0
+    },
+    {
+        "text": "Canines like puppy are known to guard the house.",
+        "label": 1
+    },
+    {
+        "text": "Did you feed the kitty its salmon kibble?",
+        "label": 0
+    },
+    {
+        "text": "A friendly hound is chasing the rubber bone.",
+        "label": 1
+    },
+    {
+        "text": "A cute stray cat is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "The calico is hissing at the shadow.",
+        "label": 0
+    },
+    {
+        "text": "I have a lazy hound that loves to dig in the yard.",
+        "label": 1
+    },
+    {
+        "text": "I need to write some C++ code for my software project.",
+        "label": 2
+    },
+    {
+        "text": "A cute stray cat is playing with catnip ball.",
+        "label": 0
+    },
+    {
+        "text": "The stray cat made a soft meow when I pet it.",
+        "label": 0
+    },
+    {
+        "text": "I have a funny feline that loves to scratch the couch.",
+        "label": 0
+    },
+    {
+        "text": "A friendly pup is chasing the tennis ball.",
+        "label": 1
+    },
+    {
+        "text": "Did you feed the tomcat its tuna fish?",
+        "label": 0
+    },
+    {
+        "text": "The train to museum was delayed by 10 minutes.",
+        "label": 2
+    },
+    {
+        "text": "Let's go to the store to buy some milk and eggs.",
+        "label": 2
+    }
+]
