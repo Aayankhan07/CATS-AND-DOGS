@@ -125,6 +125,49 @@ def download_cifar10_with_progress():
             os.remove(dest_path)
         os.rename(temp_dest_path, dest_path)
 
+def load_cifar10_locally(archive_path):
+    import tarfile
+    import pickle
+    import numpy as np
+    
+    dest_dir = os.path.expanduser("~/.keras/datasets")
+    os.makedirs(dest_dir, exist_ok=True)
+    
+    with tarfile.open(archive_path, 'r') as tar:
+        tar.extractall(path=dest_dir)
+        
+    extracted_dir = os.path.join(dest_dir, "cifar-10-batches-py")
+    if not os.path.exists(extracted_dir):
+        for name in os.listdir(dest_dir):
+            if "cifar-10" in name and os.path.isdir(os.path.join(dest_dir, name)):
+                extracted_dir = os.path.join(dest_dir, name)
+                break
+                
+    def load_batch_file(filepath):
+        with open(filepath, 'rb') as f:
+            d = pickle.load(f, encoding='bytes')
+            data = d[b'data']
+            labels = d[b'labels'] if b'labels' in d else d[b'fine_labels']
+            data = data.reshape(len(data), 3, 32, 32).transpose(0, 2, 3, 1)
+            labels = np.array(labels, dtype=np.int32)
+            return data, labels
+            
+    x_train_list = []
+    y_train_list = []
+    for i in range(1, 6):
+        batch_path = os.path.join(extracted_dir, f"data_batch_{i}")
+        x, y = load_batch_file(batch_path)
+        x_train_list.append(x)
+        y_train_list.append(y)
+        
+    x_train = np.concatenate(x_train_list, axis=0)
+    y_train = np.concatenate(y_train_list, axis=0)
+    
+    test_batch_path = os.path.join(extracted_dir, "test_batch")
+    x_test, y_test = load_batch_file(test_batch_path)
+    
+    return (x_train, y_train), (x_test, y_test)
+
 def run_training_sync(epochs=10, batch_size=64, base_dir="backend", use_synthetic=False):
     """
     Downloads CIFAR-10, filters classes, runs TensorFlow CNN training,
@@ -150,11 +193,27 @@ def run_training_sync(epochs=10, batch_size=64, base_dir="backend", use_syntheti
             x_test = np.random.random((60, 32, 32, 3)).astype(np.float32)
             y_test = np.random.randint(0, 3, size=(60,)).astype(np.int32)
         else:
-            # Download CIFAR-10 with custom live progress bar
-            download_cifar10_with_progress()
+            # Check for a local copy to bypass Keras hashing re-downloads
+            local_archive = None
+            local_repo_paths = [
+                "backend/cifar-10-batches-py.tar.gz",
+                "cifar-10-batches-py.tar.gz",
+                "backend/cifar-10-python.tar",
+                "cifar-10-python.tar"
+            ]
+            for local_path in local_repo_paths:
+                if os.path.exists(local_path) and os.path.getsize(local_path) == 170498071:
+                    local_archive = local_path
+                    break
             
-            TRAINING_STATUS["status_message"] = "Loading downloaded dataset..."
-            (train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.cifar10.load_data()
+            if local_archive:
+                TRAINING_STATUS["status_message"] = f"Loading local dataset {local_archive}..."
+                (train_images, train_labels), (test_images, test_labels) = load_cifar10_locally(local_archive)
+            else:
+                # Download CIFAR-10 with custom live progress bar
+                download_cifar10_with_progress()
+                TRAINING_STATUS["status_message"] = "Loading downloaded dataset..."
+                (train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.cifar10.load_data()
 
             TRAINING_STATUS["status_message"] = "Preprocessing and balancing dataset..."
             
