@@ -52,78 +52,7 @@ class ProgressCallback(callbacks.Callback):
             f"Loss: {loss:.4f} - Val Acc: {val_acc:.4f}"
         )
 
-def download_cifar10_with_progress():
-    global TRAINING_STATUS
-    import urllib.request
-    import os
-    import shutil
-    
-    url = "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
-    dest_dir = os.path.expanduser("~/.keras/datasets")
-    os.makedirs(dest_dir, exist_ok=True)
-    dest_path = os.path.join(dest_dir, "cifar-10-batches-py.tar.gz")
-    
-    # Expected size in bytes
-    expected_size = 170498071
-    
-    # 1. Check if it's already in the Keras dataset cache
-    if os.path.exists(dest_path) and os.path.getsize(dest_path) == expected_size:
-        return
-        
-    # 2. Check if a local copy exists in the repository
-    local_repo_paths = [
-        "backend/cifar-10-batches-py.tar.gz",
-        "cifar-10-batches-py.tar.gz",
-        "backend/cifar-10-python.tar",
-        "cifar-10-python.tar"
-    ]
-    for local_path in local_repo_paths:
-        if os.path.exists(local_path) and os.path.getsize(local_path) == expected_size:
-            TRAINING_STATUS["status_message"] = f"Found local copy at {local_path}. Copying to cache..."
-            shutil.copy(local_path, dest_path)
-            return
-        
-    TRAINING_STATUS["status_message"] = "Connecting to CIFAR-10 download server..."
-    
-    req = urllib.request.Request(
-        url, 
-        headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-    )
-    with urllib.request.urlopen(req) as response:
-        total_size = int(response.info().get('Content-Length', expected_size))
-        downloaded = 0
-        chunk_size = 1024 * 128
-        
-        temp_dest_path = dest_path + ".tmp"
-        with open(temp_dest_path, 'wb') as f:
-            while True:
-                if TRAINING_STATUS.get("should_stop", False):
-                    f.close()
-                    if os.path.exists(temp_dest_path):
-                        try:
-                            os.remove(temp_dest_path)
-                        except:
-                            pass
-                    raise Exception("Download stopped by user.")
-                    
-                chunk = response.read(chunk_size)
-                if not chunk:
-                    break
-                f.write(chunk)
-                downloaded += len(chunk)
-                
-                percent = (downloaded / total_size) * 100
-                dl_mb = downloaded / (1024 * 1024)
-                total_mb = total_size / (1024 * 1024)
-                
-                TRAINING_STATUS["status_message"] = (
-                    f"Downloading CIFAR-10 dataset (~170MB): "
-                    f"{percent:.1f}% ({dl_mb:.1f} MB / {total_mb:.1f} MB)..."
-                )
-                
-        if os.path.exists(dest_path):
-            os.remove(dest_path)
-        os.rename(temp_dest_path, dest_path)
+
 
 def load_cifar10_locally(archive_path):
     import tarfile
@@ -193,27 +122,18 @@ def run_training_sync(epochs=10, batch_size=64, base_dir="backend", use_syntheti
             x_test = np.random.random((60, 32, 32, 3)).astype(np.float32)
             y_test = np.random.randint(0, 3, size=(60,)).astype(np.int32)
         else:
-            # Check for a local copy to bypass Keras hashing re-downloads
+            # Always load from the local cifar-10-python.tar archive
             local_archive = None
-            local_repo_paths = [
-                "backend/cifar-10-batches-py.tar.gz",
-                "cifar-10-batches-py.tar.gz",
-                "backend/cifar-10-python.tar",
-                "cifar-10-python.tar"
-            ]
-            for local_path in local_repo_paths:
-                if os.path.exists(local_path) and os.path.getsize(local_path) == 170498071:
-                    local_archive = local_path
+            for path_candidate in ["cifar-10-python.tar", "backend/cifar-10-python.tar"]:
+                if os.path.exists(path_candidate) and os.path.getsize(path_candidate) == 170498071:
+                    local_archive = path_candidate
                     break
             
-            if local_archive:
-                TRAINING_STATUS["status_message"] = f"Loading local dataset {local_archive}..."
-                (train_images, train_labels), (test_images, test_labels) = load_cifar10_locally(local_archive)
-            else:
-                # Download CIFAR-10 with custom live progress bar
-                download_cifar10_with_progress()
-                TRAINING_STATUS["status_message"] = "Loading downloaded dataset..."
-                (train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.cifar10.load_data()
+            if not local_archive:
+                raise Exception("Dataset archive 'cifar-10-python.tar' (size: 170498071 bytes) not found in the workspace root directory.")
+                
+            TRAINING_STATUS["status_message"] = f"Loading local dataset {local_archive}..."
+            (train_images, train_labels), (test_images, test_labels) = load_cifar10_locally(local_archive)
 
             TRAINING_STATUS["status_message"] = "Preprocessing and balancing dataset..."
             
