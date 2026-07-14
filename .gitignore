@@ -40,3 +40,4 @@ Thumbs.db
 
 # Miscellaneous / Temporary Files
 *.crdownload
+cifar-10-batches-py.tar.gz
