@@ -4,17 +4,17 @@ import React, { useState, useRef } from 'react';
 
 const SAMPLES = [
   {
-    name: 'Cat 🐱',
+    name: 'Cat',
     url: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=128&q=80',
     type: 'cat'
   },
   {
-    name: 'Dog 🐶',
+    name: 'Dog',
     url: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=128&q=80',
     type: 'dog'
   },
   {
-    name: 'Airplane (Neither) 🌐',
+    name: 'Airplane (Neither)',
     url: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=128&q=80',
     type: 'neither'
   }
@@ -127,11 +127,6 @@ export default function ImageClassifier() {
     }
   };
 
-  const getEmoji = (pred) => {
-    if (pred === 'Cat') return '🐱';
-    if (pred === 'Dog') return '🐶';
-    return '🌐';
-  };
 
   const getClassColor = (pred) => {
     if (pred === 'Cat') return 'var(--cat)';
@@ -194,7 +189,11 @@ export default function ImageClassifier() {
                 accept="image/*"
               />
               <div style={{ background: 'rgba(14, 165, 233, 0.05)', border: '1px solid rgba(14, 165, 233, 0.15)', padding: '12px', borderRadius: '50%', marginBottom: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span className="upload-icon" style={{ fontSize: '1.6rem', margin: 0 }}>📤</span>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="17 8 12 3 7 8" />
+                  <line x1="12" y1="3" x2="12" y2="15" />
+                </svg>
               </div>
               <p className="upload-title" style={{ fontSize: '0.95rem', fontWeight: '700', color: '#fff' }}>Drag & Drop Image here</p>
               <p className="upload-subtitle" style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>or click to browse from files</p>
@@ -276,11 +275,10 @@ export default function ImageClassifier() {
                   justifyContent: 'center',
                   pointerEvents: 'none'
                 }}>
-                  <span style={{ fontSize: '1.8rem', lineHeight: 1 }}>{getEmoji(result.prediction)}</span>
-                  <span style={{ fontSize: '0.9rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#fff', marginTop: '4px' }}>
+                  <span style={{ fontSize: '1.15rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#fff' }}>
                     {result.prediction}
                   </span>
-                  <span style={{ fontSize: '0.8rem', fontWeight: '600', color: getClassColor(result.prediction) }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: '600', color: getClassColor(result.prediction), marginTop: '4px' }}>
                     {Math.round(result.confidence * 100)}% Match
                   </span>
                 </div>
@@ -292,7 +290,7 @@ export default function ImageClassifier() {
               
               <div className="prob-bar-row">
                 <div className="prob-labels">
-                  <span>Cat 🐱</span>
+                  <span>Cat</span>
                   <span>{Math.round(result.probabilities.cat * 100)}%</span>
                 </div>
                 <div className="prob-bar-container">
@@ -305,7 +303,7 @@ export default function ImageClassifier() {
               
               <div className="prob-bar-row">
                 <div className="prob-labels">
-                  <span>Dog 🐶</span>
+                  <span>Dog</span>
                   <span>{Math.round(result.probabilities.dog * 100)}%</span>
                 </div>
                 <div className="prob-bar-container">
@@ -318,7 +316,7 @@ export default function ImageClassifier() {
               
               <div className="prob-bar-row">
                 <div className="prob-labels">
-                  <span>Neither 🌐</span>
+                  <span>Neither</span>
                   <span>{Math.round(result.probabilities.neither * 100)}%</span>
                 </div>
                 <div className="prob-bar-container">
@@ -349,7 +347,11 @@ export default function ImageClassifier() {
         ) : (
           <div className="empty-analysis">
             <div style={{ background: 'rgba(255,255,255,0.01)', padding: '14px', borderRadius: '50%', border: '1px dashed var(--surface-border)', marginBottom: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <span className="empty-icon" style={{ fontSize: '1.8rem', opacity: 0.6, margin: 0 }}>🖼</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.5 }}>
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
             </div>
             {loading ? (
               <p>Analyzing image structure and predicting classes in TensorFlow... Please wait.</p>
