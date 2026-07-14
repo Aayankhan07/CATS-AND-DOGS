@@ -157,7 +157,7 @@ export default function TrainingProgress() {
                 id="epochs-input"
                 type="number"
                 min="1"
-                max="50"
+                max="100"
                 className="glass-input epochs-input"
                 value={epochs}
                 onChange={(e) => setEpochs(parseInt(e.target.value) || 5)}
