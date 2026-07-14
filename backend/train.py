@@ -55,6 +55,7 @@ class ProgressCallback(callbacks.Callback):
 def download_cifar10_with_progress():
     import urllib.request
     import os
+    import shutil
     
     url = "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
     dest_dir = os.path.expanduser("~/.keras/datasets")
@@ -63,8 +64,22 @@ def download_cifar10_with_progress():
     
     # Expected size in bytes
     expected_size = 170498071
+    
+    # 1. Check if it's already in the Keras dataset cache
     if os.path.exists(dest_path) and os.path.getsize(dest_path) == expected_size:
         return
+        
+    # 2. Check if a local copy exists in the repository
+    local_repo_paths = [
+        "backend/cifar-10-batches-py.tar.gz",
+        "cifar-10-batches-py.tar.gz"
+    ]
+    for local_path in local_repo_paths:
+        if os.path.exists(local_path) and os.path.getsize(local_path) == expected_size:
+            global TRAINING_STATUS
+            TRAINING_STATUS["status_message"] = f"Found local copy at {local_path}. Copying to cache..."
+            shutil.copy(local_path, dest_path)
+            return
         
     global TRAINING_STATUS
     TRAINING_STATUS["status_message"] = "Connecting to CIFAR-10 download server..."
