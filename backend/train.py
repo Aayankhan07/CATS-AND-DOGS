@@ -53,6 +53,7 @@ class ProgressCallback(callbacks.Callback):
         )
 
 def download_cifar10_with_progress():
+    global TRAINING_STATUS
     import urllib.request
     import os
     import shutil
@@ -76,12 +77,10 @@ def download_cifar10_with_progress():
     ]
     for local_path in local_repo_paths:
         if os.path.exists(local_path) and os.path.getsize(local_path) == expected_size:
-            global TRAINING_STATUS
             TRAINING_STATUS["status_message"] = f"Found local copy at {local_path}. Copying to cache..."
             shutil.copy(local_path, dest_path)
             return
         
-    global TRAINING_STATUS
     TRAINING_STATUS["status_message"] = "Connecting to CIFAR-10 download server..."
     
     req = urllib.request.Request(
