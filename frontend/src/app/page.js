@@ -28,7 +28,16 @@ export default function Home() {
       {/* Top Header */}
       <header className="app-header">
         <div className="logo-section">
-          <span className="logo-icon">🧠</span>
+          <span className="logo-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="5" r="2.5" />
+              <circle cx="5" cy="18" r="2.5" />
+              <circle cx="19" cy="18" r="2.5" />
+              <line x1="12" y1="7.5" x2="19" y2="15.5" />
+              <line x1="12" y1="7.5" x2="5" y2="15.5" />
+              <line x1="7.5" y1="18" x2="16.5" y2="18" />
+            </svg>
+          </span>
           <div className="logo-text">
             <h1>CIFAR-10 CNN Classifier</h1>
             <p>Cat, Dog, or Neither?</p>
@@ -49,13 +58,13 @@ export default function Home() {
               className={`nav-tab-btn ${activeTab === 'playground' ? 'active' : ''}`}
               onClick={() => setActiveTab('playground')}
             >
-              🖼 Playground
+              Playground
             </button>
             <button 
               className={`nav-tab-btn ${activeTab === 'training' ? 'active' : ''}`}
               onClick={() => setActiveTab('training')}
             >
-              ⚙️ Dashboard
+              Dashboard
             </button>
           </nav>
         </div>
