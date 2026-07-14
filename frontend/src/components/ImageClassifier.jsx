@@ -271,7 +271,7 @@ export default function ImageClassifier() {
                   width: '160px',
                   height: '160px',
                   display: 'flex',
-                  flex-direction: 'column',
+                  flexDirection: 'column',
                   alignItems: 'center',
                   justifyContent: 'center',
                   pointerEvents: 'none'
