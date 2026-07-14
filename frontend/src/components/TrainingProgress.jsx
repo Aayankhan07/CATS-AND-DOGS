@@ -420,7 +420,10 @@ export default function TrainingProgress() {
         ) : (
           <div className="empty-graphs" style={{ minHeight: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ background: 'rgba(255,255,255,0.01)', padding: '14px', borderRadius: '50%', border: '1px dashed var(--surface-border)', marginBottom: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <span className="empty-icon" style={{ fontSize: '1.8rem', opacity: 0.6, margin: 0 }}>📈</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.5 }}>
+                <path d="M3 3v18h18" />
+                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+              </svg>
             </div>
             <p style={{ maxWidth: '280px' }}>Metrics plotting history is currently empty. Run model training to visualize real-time training progress curves.</p>
           </div>
