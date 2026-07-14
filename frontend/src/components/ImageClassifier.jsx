@@ -163,7 +163,7 @@ export default function ImageClassifier() {
                   onClick={handleClear} 
                   className="glass-button clear-btn"
                   disabled={loading}
-                  style={{ background: 'rgba(239, 68, 68, 0.2)', boxShadow: 'none' }}
+                  style={{ background: 'rgba(239, 68, 68, 0.15)', border: '1px solid rgba(239, 68, 68, 0.25)', color: '#fca5a5', boxShadow: 'none' }}
                 >
                   Clear
                 </button>
@@ -184,6 +184,7 @@ export default function ImageClassifier() {
               onDragLeave={handleDrag}
               onDrop={handleDrop}
               onClick={triggerFileInput}
+              style={{ padding: '40px 20px' }}
             >
               <input 
                 type="file" 
@@ -192,10 +193,12 @@ export default function ImageClassifier() {
                 onChange={handleFileChange}
                 accept="image/*"
               />
-              <span className="upload-icon">📤</span>
-              <p className="upload-title">Drag & Drop Image here</p>
-              <p className="upload-subtitle">or click to browse from files</p>
-              <p className="upload-constraints">Supports PNG, JPG, JPEG (will be resized to 32x32)</p>
+              <div style={{ background: 'rgba(14, 165, 233, 0.05)', border: '1px solid rgba(14, 165, 233, 0.15)', padding: '12px', borderRadius: '50%', marginBottom: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <span className="upload-icon" style={{ fontSize: '1.6rem', margin: 0 }}>📤</span>
+              </div>
+              <p className="upload-title" style={{ fontSize: '0.95rem', fontWeight: '700', color: '#fff' }}>Drag & Drop Image here</p>
+              <p className="upload-subtitle" style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>or click to browse from files</p>
+              <p className="upload-constraints" style={{ fontSize: '0.7rem', opacity: 0.6 }}>Supports PNG, JPG, JPEG (will be resized to 32x32)</p>
             </div>
           )}
 
@@ -207,7 +210,7 @@ export default function ImageClassifier() {
 
           {/* Sample Gallery */}
           <div className="samples-gallery">
-            <h4>Or choose a demo image to test instantly:</h4>
+            <h4 style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: '700' }}>Or select a test image:</h4>
             <div className="samples-grid">
               {SAMPLES.map((sample, idx) => (
                 <button 
@@ -215,9 +218,10 @@ export default function ImageClassifier() {
                   className="sample-card glass-panel"
                   onClick={() => handleSampleSelect(sample.url)}
                   disabled={loading}
+                  style={{ background: 'rgba(0,0,0,0.12)' }}
                 >
                   <img src={sample.url} alt={sample.name} className="sample-thumbnail" />
-                  <span>{sample.name}</span>
+                  <span style={{ fontSize: '0.75rem', fontWeight: '600' }}>{sample.name}</span>
                 </button>
               ))}
             </div>
@@ -230,22 +234,61 @@ export default function ImageClassifier() {
         <h3>Classification Result</h3>
         {result ? (
           <div className="analysis-content animate-fade-in">
-            <div className="prediction-focus">
-              <div 
-                className="focus-circle"
-                style={{
-                  borderColor: getClassColor(result.prediction),
-                  boxShadow: `0 0 30px ${getClassGlow(result.prediction)}`
-                }}
-              >
-                <span className="focus-emoji">{getEmoji(result.prediction)}</span>
-                <span className="focus-title">{result.prediction}</span>
-                <span className="focus-percentage">{Math.round(result.confidence * 100)}%</span>
+            <div className="prediction-focus" style={{ display: 'flex', justifyContent: 'center', padding: '12px 0' }}>
+              {/* Circular Gauge */}
+              <div style={{ position: 'relative', width: '160px', height: '160px' }}>
+                <svg width="160" height="160" viewBox="0 0 160 160">
+                  {/* Background track */}
+                  <circle
+                    cx="80"
+                    cy="80"
+                    r="64"
+                    fill="transparent"
+                    stroke="rgba(255, 255, 255, 0.03)"
+                    strokeWidth="6"
+                  />
+                  {/* Active track */}
+                  <circle
+                    cx="80"
+                    cy="80"
+                    r="64"
+                    fill="transparent"
+                    stroke={getClassColor(result.prediction)}
+                    strokeWidth="6"
+                    strokeDasharray={2 * Math.PI * 64}
+                    strokeDashoffset={2 * Math.PI * 64 - (result.confidence * 2 * Math.PI * 64)}
+                    strokeLinecap="round"
+                    transform="rotate(-90 80 80)"
+                    style={{ transition: 'stroke-dashoffset 0.8s cubic-bezier(0.16, 1, 0.3, 1)' }}
+                  />
+                </svg>
+                
+                {/* Text centered inside the gauge */}
+                <div style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '160px',
+                  height: '160px',
+                  display: 'flex',
+                  flex-direction: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  pointerEvents: 'none'
+                }}>
+                  <span style={{ fontSize: '1.8rem', lineHeight: 1 }}>{getEmoji(result.prediction)}</span>
+                  <span style={{ fontSize: '0.9rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#fff', marginTop: '4px' }}>
+                    {result.prediction}
+                  </span>
+                  <span style={{ fontSize: '0.8rem', fontWeight: '600', color: getClassColor(result.prediction) }}>
+                    {Math.round(result.confidence * 100)}% Match
+                  </span>
+                </div>
               </div>
             </div>
 
             <div className="prob-list">
-              <h4>Model Class Scores</h4>
+              <h4 style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.03em' }}>Model Class Scores</h4>
               
               <div className="prob-bar-row">
                 <div className="prob-labels">
@@ -287,19 +330,31 @@ export default function ImageClassifier() {
               </div>
             </div>
             
-            <div className="model-details-alert">
-              <p>
-                <strong>CNN Inference Log:</strong> Image resized to 32x32 and classified using Keras weights trained on CIFAR-10.
-              </p>
+            {/* Terminal-style Inference Logs */}
+            <div className="terminal-panel" style={{ marginTop: '8px', background: 'rgba(0,0,0,0.3)', borderRadius: '8px', border: '1px solid var(--surface-border)', overflow: 'hidden' }}>
+              <div className="terminal-header" style={{ display: 'flex', alignItems: 'center', gap: '5px', background: 'rgba(255,255,255,0.02)', padding: '5px 12px', borderBottom: '1px solid var(--surface-border)' }}>
+                <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#ef4444' }}></span>
+                <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#f59e0b' }}></span>
+                <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#10b981' }}></span>
+                <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)', marginLeft: '4px', fontFamily: 'monospace' }}>cifar10_inference.sh</span>
+              </div>
+              <div style={{ padding: '10px 14px', fontFamily: 'monospace', fontSize: '0.7rem', color: '#cbd5e1', lineHeight: '1.4' }}>
+                <span style={{ color: 'var(--primary)' }}>$</span> python classify.py --input={result.filename}<br />
+                <span style={{ color: '#64748b' }}>[INFO] Loaded CIFAR-10 model (TensorFlow/Keras H5)</span><br />
+                <span style={{ color: '#64748b' }}>[INFO] Preprocessed image matrix (32x32x3)</span><br />
+                <span style={{ color: '#10b981' }}>[SUCCESS] Prediction: {result.prediction} ({Math.round(result.confidence * 100)}% match)</span>
+              </div>
             </div>
           </div>
         ) : (
           <div className="empty-analysis">
-            <span className="empty-icon">🖼</span>
+            <div style={{ background: 'rgba(255,255,255,0.01)', padding: '14px', borderRadius: '50%', border: '1px dashed var(--surface-border)', marginBottom: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <span className="empty-icon" style={{ fontSize: '1.8rem', opacity: 0.6, margin: 0 }}>🖼</span>
+            </div>
             {loading ? (
               <p>Analyzing image structure and predicting classes in TensorFlow... Please wait.</p>
             ) : (
-              <p>Upload a custom image or click a sample to see the TensorFlow CNN classification scores and probabilities here.</p>
+              <p style={{ maxWidth: '280px' }}>Upload a custom image or click a sample to see the TensorFlow CNN classification scores and probabilities here.</p>
             )}
           </div>
         )}
