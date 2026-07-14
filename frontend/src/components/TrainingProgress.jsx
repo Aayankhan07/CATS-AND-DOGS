@@ -147,7 +147,7 @@ export default function TrainingProgress() {
       {/* Run Controller Card */}
       <div className="train-controller glass-panel">
         <h3 style={{ fontSize: '1.15rem', fontWeight: '700', color: '#fff' }}>TensorFlow CNN Training Control</h3>
-        <p className="card-desc">Trigger a training run of the 2D CNN on the CIFAR-10 dataset. The training set is balanced to contain 15,000 images total (5,000 Cats, 5,000 Dogs, and 5,000 Neither samples) resized to 32x32x3.</p>
+        <p className="card-desc">Trigger a training run of the 2D CNN on the local CIFAR-10 dataset (loaded from cifar-10-python.tar). The training set is balanced to contain 15,000 images total (5,000 Cats, 5,000 Dogs, and 5,000 Neither samples) resized to 32x32x3.</p>
 
         <form onSubmit={handleStartTraining} className="training-form">
           <div className="form-group">
@@ -213,7 +213,7 @@ export default function TrainingProgress() {
                   disabled={status.is_training}
                   style={{ cursor: 'pointer', accentColor: 'var(--primary)', width: '15px', height: '15px' }}
                 />
-                <span>Use Synthetic Data (Instantly train in-memory without 170MB download)</span>
+                <span>Use Synthetic Data (Instantly train in-memory with randomly generated noise instead of local CIFAR-10 tarball)</span>
               </label>
             </div>
           </div>
