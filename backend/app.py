@@ -144,3 +144,17 @@ def stop_train_model():
         return {"message": "Stop signal sent.", "success": True}
     return {"message": "No active training process to stop.", "success": False}
 
+# Serve static files from static_out folder if it exists (for unified Docker deployment)
+static_dir = os.path.join(os.path.dirname(__file__), "static_out")
+if os.path.exists(static_dir):
+    from fastapi.staticfiles import StaticFiles
+    from fastapi.responses import FileResponse
+    
+    app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
+    
+    # Fallback route for React SPA client-side routing
+    @app.exception_handler(404)
+    async def custom_404_handler(request, __):
+        return FileResponse(os.path.join(static_dir, "index.html"))
+
+
