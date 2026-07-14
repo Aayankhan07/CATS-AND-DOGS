@@ -73,7 +73,9 @@ def download_cifar10_with_progress():
     # 2. Check if a local copy exists in the repository
     local_repo_paths = [
         "backend/cifar-10-batches-py.tar.gz",
-        "cifar-10-batches-py.tar.gz"
+        "cifar-10-batches-py.tar.gz",
+        "backend/cifar-10-python.tar",
+        "cifar-10-python.tar"
     ]
     for local_path in local_repo_paths:
         if os.path.exists(local_path) and os.path.getsize(local_path) == expected_size:
