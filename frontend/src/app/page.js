@@ -79,7 +79,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="app-footer">
-          <p>Built with ⚡ TensorFlow, FastAPI, and Next.js</p>
+          <p>Built with TensorFlow, FastAPI, and Next.js</p>
         </footer>
       </div>
     </div>
