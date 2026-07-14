@@ -14,7 +14,6 @@ export default function TrainingProgress() {
   });
 
   const [epochs, setEpochs] = useState(10);
-  const [useSynthetic, setUseSynthetic] = useState(false);
 
   const fetchStatus = async () => {
     try {
@@ -44,7 +43,7 @@ export default function TrainingProgress() {
       const res = await fetch('/api/train', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ epochs, synthetic: useSynthetic })
+        body: JSON.stringify({ epochs, synthetic: false })
       });
       if (res.ok) {
         fetchStatus();
@@ -202,19 +201,6 @@ export default function TrainingProgress() {
                   Train Model
                 </button>
               )}
-            </div>
-            
-            <div className="synthetic-control" style={{ marginTop: '4px' }}>
-              <label className="checkbox-label" style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                <input
-                  type="checkbox"
-                  checked={useSynthetic}
-                  onChange={(e) => setUseSynthetic(e.target.checked)}
-                  disabled={status.is_training}
-                  style={{ cursor: 'pointer', accentColor: 'var(--primary)', width: '15px', height: '15px' }}
-                />
-                <span>Use Synthetic Data (Instantly train in-memory with randomly generated noise instead of local CIFAR-10 tarball)</span>
-              </label>
             </div>
           </div>
         </form>
