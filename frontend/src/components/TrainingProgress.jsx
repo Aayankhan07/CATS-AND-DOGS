@@ -146,12 +146,12 @@ export default function TrainingProgress() {
     <div className="trainer-container">
       {/* Run Controller Card */}
       <div className="train-controller glass-panel">
-        <h3>TensorFlow CNN Training Control</h3>
-        <p className="card-desc">Trigger a full training run of the 2D Convolutional Neural Network on the CIFAR-10 dataset. The training set is balanced to contain 15,000 images total (5,000 Cats, 5,000 Dogs, and 5,000 Neither samples) resized to 32x32x3.</p>
+        <h3 style={{ fontSize: '1.15rem', fontWeight: '700', color: '#fff' }}>TensorFlow CNN Training Control</h3>
+        <p className="card-desc">Trigger a training run of the 2D CNN on the CIFAR-10 dataset. The training set is balanced to contain 15,000 images total (5,000 Cats, 5,000 Dogs, and 5,000 Neither samples) resized to 32x32x3.</p>
 
         <form onSubmit={handleStartTraining} className="training-form">
           <div className="form-group">
-            <label htmlFor="epochs-input">Training Epochs</label>
+            <label htmlFor="epochs-input" style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: '700' }}>Training Epochs</label>
             <div className="epoch-control-row">
               <input
                 id="epochs-input"
@@ -162,6 +162,7 @@ export default function TrainingProgress() {
                 value={epochs}
                 onChange={(e) => setEpochs(parseInt(e.target.value) || 5)}
                 disabled={status.is_training}
+                style={{ width: '80px', background: 'rgba(0,0,0,0.2)' }}
               />
               {status.is_training ? (
                 <div style={{ display: 'flex', gap: '8px', flex: 1 }}>
@@ -178,12 +179,15 @@ export default function TrainingProgress() {
                     onClick={handleStopTraining}
                     className="glass-button stop-train-btn"
                     style={{ 
-                      background: 'rgba(239, 68, 68, 0.25)', 
-                      borderColor: 'rgba(239, 68, 68, 0.5)',
+                      background: 'rgba(239, 68, 68, 0.15)', 
+                      borderColor: 'rgba(239, 68, 68, 0.25)',
+                      borderWidth: '1px',
+                      borderStyle: 'solid',
                       color: '#fca5a5',
                       flex: '0 0 auto',
                       padding: '0 16px',
-                      cursor: 'pointer'
+                      cursor: 'pointer',
+                      boxShadow: 'none'
                     }}
                   >
                     Stop
@@ -193,94 +197,123 @@ export default function TrainingProgress() {
                 <button 
                   type="submit" 
                   className="glass-button start-train-btn"
+                  style={{ flex: 1 }}
                 >
                   Train Model
                 </button>
               )}
             </div>
             
-            <div className="synthetic-control" style={{ marginTop: '12px' }}>
-              <label className="checkbox-label" style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }}>
+            <div className="synthetic-control" style={{ marginTop: '4px' }}>
+              <label className="checkbox-label" style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
                 <input
                   type="checkbox"
                   checked={useSynthetic}
                   onChange={(e) => setUseSynthetic(e.target.checked)}
                   disabled={status.is_training}
-                  style={{ cursor: 'pointer', accentColor: 'var(--primary)' }}
+                  style={{ cursor: 'pointer', accentColor: 'var(--primary)', width: '15px', height: '15px' }}
                 />
-                Use Synthetic Data (Instantly train in-memory without 170MB download)
+                <span>Use Synthetic Data (Instantly train in-memory without 170MB download)</span>
               </label>
             </div>
           </div>
         </form>
 
-        <div className="training-status-box">
+        <div className="training-status-box" style={{ background: 'rgba(0,0,0,0.15)', border: '1px solid var(--surface-border)', padding: '14px', borderRadius: '10px' }}>
           <div className="status-header-row">
-            <h4>System Message:</h4>
-            <span className={`status-badge ${status.is_training ? 'badge-active' : 'badge-idle'}`}>
+            <h4 style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>System Status:</h4>
+            <span className={`status-badge ${status.is_training ? 'badge-active' : 'badge-idle'}`} style={{
+              fontSize: '0.65rem',
+              fontWeight: '800',
+              padding: '2px 8px',
+              borderRadius: '4px',
+              background: status.is_training ? 'rgba(14, 165, 233, 0.1)' : 'rgba(255,255,255,0.03)',
+              color: status.is_training ? 'var(--primary)' : 'var(--text-muted)',
+              border: status.is_training ? '1px solid rgba(14, 165, 233, 0.2)' : '1px solid var(--surface-border)'
+            }}>
               {status.is_training ? 'TRAINING' : 'IDLE'}
             </span>
           </div>
-          <p className="status-msg" style={{ fontFamily: 'monospace', fontSize: '0.85rem' }}>
+          <p className="status-msg" style={{ fontFamily: 'monospace', fontSize: '0.8rem', color: '#e2e8f0', marginTop: '6px' }}>
             "{status.status_message}"
           </p>
           
           {status.is_training && (
-            <div className="progress-bar-row">
-              <div className="progress-bar-bg">
+            <div className="progress-bar-row" style={{ marginTop: '8px' }}>
+              <div className="progress-bar-bg" style={{ height: '5px', background: 'rgba(255,255,255,0.03)' }}>
                 <div 
                   className="progress-bar-fill" 
-                  style={{ width: `${progressPercent}%` }}
+                  style={{ width: `${progressPercent}%`, background: 'linear-gradient(90deg, var(--primary), var(--dog))' }}
                 />
               </div>
-              <span className="progress-text">{status.current_epoch} / {status.total_epochs} Epochs</span>
+              <span className="progress-text" style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+                {status.current_epoch} / {status.total_epochs} Epochs ({Math.round(progressPercent)}%)
+              </span>
             </div>
           )}
         </div>
 
-        <div className="train-metadata">
-          <div className="metadata-row">
+        <div className="train-metadata" style={{ borderTop: '1px solid var(--surface-border)', paddingTop: '12px' }}>
+          <div className="metadata-row" style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
             <span>Dataset size (balanced):</span>
-            <strong>{status.dataset_size || 15000} images</strong>
+            <strong style={{ color: '#fff' }}>{status.dataset_size || 15000} images</strong>
           </div>
-          <div className="metadata-row">
+          <div className="metadata-row" style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
             <span>Input Image Resolution:</span>
-            <strong>32x32 (RGB)</strong>
+            <strong style={{ color: '#fff' }}>32x32 (RGB)</strong>
           </div>
         </div>
       </div>
 
       {/* Metrics Graphs Card */}
       <div className="train-graphs glass-panel">
-        <h3>Real-time Metrics Curve</h3>
+        <h3 style={{ fontSize: '1.15rem', fontWeight: '700', color: '#fff' }}>Real-time Metrics Curve</h3>
         <p className="card-desc">Visualize Keras categorical crossentropy training loss and validation accuracy scores across epochs.</p>
         
         {status.loss_history.length > 0 ? (
           <div className="graphs-grid">
-            {/* Loss graph */}
-            <div className="graph-box">
-              <div className="graph-header">
-                <h4>Training Loss</h4>
-                <span className="metric-display">Current: {getLatestMetric(status.loss_history)}</span>
+            {/* Quick KPI blocks */}
+            <div style={{ display: 'flex', gap: '12px', marginTop: '4px' }}>
+              <div style={{ flex: 1, background: 'rgba(0,0,0,0.12)', border: '1px solid var(--surface-border)', padding: '10px 14px', borderRadius: '8px' }}>
+                <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: '700' }}>Best Loss</span>
+                <div style={{ fontSize: '1.3rem', fontWeight: '800', color: '#f59e0b', marginTop: '2px' }}>
+                  {Math.min(...status.loss_history).toFixed(4)}
+                </div>
               </div>
-              <div className="svg-wrapper">
+              <div style={{ flex: 1, background: 'rgba(0,0,0,0.12)', border: '1px solid var(--surface-border)', padding: '10px 14px', borderRadius: '8px' }}>
+                <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: '700' }}>Peak Accuracy</span>
+                <div style={{ fontSize: '1.3rem', fontWeight: '800', color: 'var(--dog)', marginTop: '2px' }}>
+                  {`${Math.round(Math.max(...status.accuracy_history) * 100)}%`}
+                </div>
+              </div>
+            </div>
+
+            {/* Loss graph */}
+            <div className="graph-box" style={{ background: 'rgba(0,0,0,0.1)', border: '1px solid var(--surface-border)', padding: '12px', borderRadius: '10px' }}>
+              <div className="graph-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <h4 style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.03em' }}>Training Loss</h4>
+                <span className="metric-display" style={{ fontSize: '0.8rem', fontWeight: '700', color: '#f59e0b' }}>Current: {getLatestMetric(status.loss_history)}</span>
+              </div>
+              <div className="svg-wrapper" style={{ background: 'rgba(0,0,0,0.2)', padding: '6px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.01)', marginTop: '6px' }}>
                 <svg viewBox="0 0 500 150" className="chart-svg">
                   <defs>
                     <linearGradient id="lossGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#f59e0b" stopOpacity="0.3" />
+                      <stop offset="0%" stopColor="#f59e0b" stopOpacity="0.2" />
                       <stop offset="100%" stopColor="#f59e0b" stopOpacity="0.0" />
                     </linearGradient>
                   </defs>
                   
                   {/* Grid lines */}
-                  <line x1="10" y1="10" x2="490" y2="10" stroke="rgba(255,255,255,0.05)" />
-                  <line x1="10" y1="75" x2="490" y2="75" stroke="rgba(255,255,255,0.05)" />
-                  <line x1="10" y1="140" x2="490" y2="140" stroke="rgba(255,255,255,0.1)" />
+                  <line x1="10" y1="10" x2="490" y2="10" stroke="rgba(255,255,255,0.03)" strokeDasharray="3 3" />
+                  <line x1="10" y1="42.5" x2="490" y2="42.5" stroke="rgba(255,255,255,0.03)" strokeDasharray="3 3" />
+                  <line x1="10" y1="75" x2="490" y2="75" stroke="rgba(255,255,255,0.03)" strokeDasharray="3 3" />
+                  <line x1="10" y1="107.5" x2="490" y2="107.5" stroke="rgba(255,255,255,0.03)" strokeDasharray="3 3" />
+                  <line x1="10" y1="140" x2="490" y2="140" stroke="rgba(255,255,255,0.08)" />
                   
                   {/* Chart Path Area */}
                   <path d={renderSVGArea(status.loss_history, 'loss')} fill="url(#lossGrad)" />
                   {/* Chart Path Line */}
-                  <path d={renderSVGPath(status.loss_history, 'loss')} fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" />
+                  <path d={renderSVGPath(status.loss_history, 'loss')} fill="none" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round" />
                   
                   {/* Dots on points */}
                   {status.loss_history.map((val, idx) => {
@@ -304,49 +337,51 @@ export default function TrainingProgress() {
                         key={idx} 
                         cx={x} 
                         cy={y} 
-                        r="3.5" 
+                        r="3" 
                         fill="#f59e0b" 
-                        stroke="#07090e" 
-                        strokeWidth="1.5" 
+                        stroke="#090d16" 
+                        strokeWidth="1" 
                       />
                     );
                   })}
                 </svg>
               </div>
-              <div className="graph-x-labels">
+              <div className="graph-x-labels" style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.65rem', color: 'var(--text-muted)', marginTop: '4px' }}>
                 <span>Epoch 1</span>
                 <span>Epoch {status.loss_history.length}</span>
               </div>
             </div>
 
             {/* Accuracy graph */}
-            <div className="graph-box">
-              <div className="graph-header">
-                <h4>Validation Accuracy (%)</h4>
-                <span className="metric-display" style={{color: 'var(--dog)'}}>
+            <div className="graph-box" style={{ background: 'rgba(0,0,0,0.1)', border: '1px solid var(--surface-border)', padding: '12px', borderRadius: '10px' }}>
+              <div className="graph-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <h4 style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.03em' }}>Validation Accuracy (%)</h4>
+                <span className="metric-display" style={{ fontSize: '0.8rem', fontWeight: '700', color: 'var(--dog)' }}>
                   Current: {typeof getLatestMetric(status.accuracy_history) === 'number' 
                     ? `${Math.round(getLatestMetric(status.accuracy_history) * 100)}%` 
                     : '-'}
                 </span>
               </div>
-              <div className="svg-wrapper">
+              <div className="svg-wrapper" style={{ background: 'rgba(0,0,0,0.2)', padding: '6px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.01)', marginTop: '6px' }}>
                 <svg viewBox="0 0 500 150" className="chart-svg">
                   <defs>
                     <linearGradient id="accGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="#06b6d4" stopOpacity="0.0" />
+                      <stop offset="0%" stopColor="#0d9488" stopOpacity="0.2" />
+                      <stop offset="100%" stopColor="#0d9488" stopOpacity="0.0" />
                     </linearGradient>
                   </defs>
                   
                   {/* Grid lines */}
-                  <line x1="10" y1="10" x2="490" y2="10" stroke="rgba(255,255,255,0.05)" />
-                  <line x1="10" y1="75" x2="490" y2="75" stroke="rgba(255,255,255,0.05)" />
-                  <line x1="10" y1="140" x2="490" y2="140" stroke="rgba(255,255,255,0.1)" />
+                  <line x1="10" y1="10" x2="490" y2="10" stroke="rgba(255,255,255,0.03)" strokeDasharray="3 3" />
+                  <line x1="10" y1="42.5" x2="490" y2="42.5" stroke="rgba(255,255,255,0.03)" strokeDasharray="3 3" />
+                  <line x1="10" y1="75" x2="490" y2="75" stroke="rgba(255,255,255,0.03)" strokeDasharray="3 3" />
+                  <line x1="10" y1="107.5" x2="490" y2="107.5" stroke="rgba(255,255,255,0.03)" strokeDasharray="3 3" />
+                  <line x1="10" y1="140" x2="490" y2="140" stroke="rgba(255,255,255,0.08)" />
                   
                   {/* Chart Path Area */}
                   <path d={renderSVGArea(status.accuracy_history, 'accuracy')} fill="url(#accGrad)" />
                   {/* Chart Path Line */}
-                  <path d={renderSVGPath(status.accuracy_history, 'accuracy')} fill="none" stroke="#06b6d4" strokeWidth="2" strokeLinecap="round" />
+                  <path d={renderSVGPath(status.accuracy_history, 'accuracy')} fill="none" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" />
                   
                   {/* Dots on points */}
                   {status.accuracy_history.map((val, idx) => {
@@ -367,25 +402,27 @@ export default function TrainingProgress() {
                         key={idx} 
                         cx={x} 
                         cy={y} 
-                        r="3.5" 
-                        fill="#06b6d4" 
-                        stroke="#07090e" 
-                        strokeWidth="1.5" 
+                        r="3" 
+                        fill="#0d9488" 
+                        stroke="#090d16" 
+                        strokeWidth="1" 
                       />
                     );
                   })}
                 </svg>
               </div>
-              <div className="graph-x-labels">
+              <div className="graph-x-labels" style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.65rem', color: 'var(--text-muted)', marginTop: '4px' }}>
                 <span>Epoch 1</span>
                 <span>Epoch {status.accuracy_history.length}</span>
               </div>
             </div>
           </div>
         ) : (
-          <div className="empty-graphs">
-            <span className="empty-icon">📈</span>
-            <p>Metrics plotting history is currently empty. Run model training to visualize real-time training progress curves.</p>
+          <div className="empty-graphs" style={{ minHeight: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ background: 'rgba(255,255,255,0.01)', padding: '14px', borderRadius: '50%', border: '1px dashed var(--surface-border)', marginBottom: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <span className="empty-icon" style={{ fontSize: '1.8rem', opacity: 0.6, margin: 0 }}>📈</span>
+            </div>
+            <p style={{ maxWidth: '280px' }}>Metrics plotting history is currently empty. Run model training to visualize real-time training progress curves.</p>
           </div>
         )}
       </div>
