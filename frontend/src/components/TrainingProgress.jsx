@@ -294,7 +294,9 @@ export default function TrainingProgress() {
                     const minVal = Math.min(...status.loss_history, 0.0);
                     const range = maxVal - minVal || 1.0;
                     
-                    const x = padding + (idx / (numPoints - 1)) * chartW;
+                    const x = numPoints > 1 
+                      ? padding + (idx / (numPoints - 1)) * chartW 
+                      : padding + chartW / 2;
                     const y = padding + chartH - ((val - minVal) / range) * chartH;
                     
                     return (
@@ -355,7 +357,9 @@ export default function TrainingProgress() {
                     const chartH = height - 2 * padding;
                     const numPoints = status.accuracy_history.length;
                     
-                    const x = padding + (idx / (numPoints - 1)) * chartW;
+                    const x = numPoints > 1 
+                      ? padding + (idx / (numPoints - 1)) * chartW 
+                      : padding + chartW / 2;
                     const y = padding + chartH - val * chartH;
                     
                     return (
