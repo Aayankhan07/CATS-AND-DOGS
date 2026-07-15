@@ -3,13 +3,10 @@ import tensorflow as tf
 from fastapi import FastAPI, HTTPException, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import Dict, Any
-
 from backend.utils import preprocess_image
 from backend.train import (
     TRAINING_STATUS,
-    start_training_async,
-    run_training_sync
+    start_training_async
 )
 
 app = FastAPI(title="CIFAR-10 Cat vs Dog vs Neither Classifier API")
@@ -62,7 +59,6 @@ def startup_event():
 
 class TrainRequest(BaseModel):
     epochs: int = 10
-    synthetic: bool = False
 
 @app.post("/api/predict")
 async def predict(file: UploadFile = File(...)):
@@ -115,7 +111,7 @@ def train_model(request: TrainRequest):
     if TRAINING_STATUS["is_training"]:
         return {"message": "Training is already in progress.", "success": False}
         
-    started = start_training_async(epochs=request.epochs, use_synthetic=request.synthetic, base_dir="backend")
+    started = start_training_async(epochs=request.epochs, base_dir="backend")
     
     # Reload model callback when training completes
     def reload_watcher():
