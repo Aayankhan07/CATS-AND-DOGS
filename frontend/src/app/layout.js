@@ -9,7 +9,7 @@ const outfit = Outfit({
 
 export const metadata = {
   title: "Pet Classifier | Cat, Dog, or Neither?",
-  description: "A Text CNN Classifier built with PyTorch and Next.js that predicts whether a phrase is about a cat, a dog, or neither.",
+  description: "A real-time image classifier built with TensorFlow/Keras, FastAPI, and Next.js that predicts whether an uploaded image is a Cat, Dog, or Neither.",
 };
 
 export default function RootLayout({ children }) {
