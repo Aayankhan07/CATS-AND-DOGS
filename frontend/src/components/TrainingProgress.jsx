@@ -43,7 +43,7 @@ export default function TrainingProgress() {
       const res = await fetch('/api/train', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ epochs, synthetic: false })
+        body: JSON.stringify({ epochs })
       });
       if (res.ok) {
         fetchStatus();
