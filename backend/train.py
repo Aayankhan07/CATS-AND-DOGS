@@ -178,13 +178,21 @@ def run_training_sync(epochs=10, batch_size=64, base_dir="backend"):
         
         progress_cb = ProgressCallback(epochs)
         
+        lr_reducer = callbacks.ReduceLROnPlateau(
+            monitor='val_loss',
+            factor=0.5,
+            patience=5,
+            min_lr=1e-6,
+            verbose=1
+        )
+        
         TRAINING_STATUS["status_message"] = "Training model..."
         model.fit(
             x_train, y_train,
             epochs=epochs,
             batch_size=batch_size,
             validation_data=(x_test, y_test),
-            callbacks=[progress_cb],
+            callbacks=[progress_cb, lr_reducer],
             verbose=1
         )
         
