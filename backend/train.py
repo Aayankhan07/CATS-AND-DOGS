@@ -1,5 +1,4 @@
 import os
-import json
 import threading
 import numpy as np
 import tensorflow as tf
@@ -97,7 +96,7 @@ def load_cifar10_locally(archive_path):
     
     return (x_train, y_train), (x_test, y_test)
 
-def run_training_sync(epochs=10, batch_size=64, base_dir="backend", use_synthetic=False):
+def run_training_sync(epochs=10, batch_size=64, base_dir="backend"):
     """
     Downloads CIFAR-10, filters classes, runs TensorFlow CNN training,
     saves the model weights, and updates global TRAINING_STATUS.
@@ -112,75 +111,65 @@ def run_training_sync(epochs=10, batch_size=64, base_dir="backend", use_syntheti
     TRAINING_STATUS["accuracy_history"] = []
     
     try:
-        if use_synthetic:
-            TRAINING_STATUS["status_message"] = "Generating synthetic dataset in memory..."
-            np.random.seed(42)
-            # Generate 300 synthetic images of 32x32x3
-            x_train = np.random.random((300, 32, 32, 3)).astype(np.float32)
-            y_train = np.random.randint(0, 3, size=(300,)).astype(np.int32)
+        # Always load from the local cifar-10-python.tar archive
+        local_archive = None
+        for path_candidate in ["cifar-10-python.tar", "backend/cifar-10-python.tar"]:
+            if os.path.exists(path_candidate) and os.path.getsize(path_candidate) == 170498071:
+                local_archive = path_candidate
+                break
+        
+        if not local_archive:
+            raise Exception("Dataset archive 'cifar-10-python.tar' (size: 170498071 bytes) not found in the workspace root directory.")
             
-            x_test = np.random.random((60, 32, 32, 3)).astype(np.float32)
-            y_test = np.random.randint(0, 3, size=(60,)).astype(np.int32)
-        else:
-            # Always load from the local cifar-10-python.tar archive
-            local_archive = None
-            for path_candidate in ["cifar-10-python.tar", "backend/cifar-10-python.tar"]:
-                if os.path.exists(path_candidate) and os.path.getsize(path_candidate) == 170498071:
-                    local_archive = path_candidate
-                    break
-            
-            if not local_archive:
-                raise Exception("Dataset archive 'cifar-10-python.tar' (size: 170498071 bytes) not found in the workspace root directory.")
-                
-            TRAINING_STATUS["status_message"] = f"Loading local dataset {local_archive}..."
-            (train_images, train_labels), (test_images, test_labels) = load_cifar10_locally(local_archive)
+        TRAINING_STATUS["status_message"] = f"Loading local dataset {local_archive}..."
+        (train_images, train_labels), (test_images, test_labels) = load_cifar10_locally(local_archive)
 
-            TRAINING_STATUS["status_message"] = "Preprocessing and balancing dataset..."
-            
-            # Flatten label dimensions
-            train_labels_flat = train_labels.flatten()
-            test_labels_flat = test_labels.flatten()
-            
-            # Filter indices: Cat=3, Dog=5, Neither=anything else
-            cat_train_idx = np.where(train_labels_flat == 3)[0]
-            dog_train_idx = np.where(train_labels_flat == 5)[0]
-            neither_train_idx = np.where((train_labels_flat != 3) & (train_labels_flat != 5))[0]
-            
-            # Balance dataset to 5,000 samples per class
-            np.random.seed(42)
-            sampled_neither_train_idx = np.random.choice(neither_train_idx, len(cat_train_idx), replace=False)
-            
-            # Combine training data
-            train_idx = np.concatenate([cat_train_idx, dog_train_idx, sampled_neither_train_idx])
-            np.random.shuffle(train_idx)
-            
-            x_train = train_images[train_idx] / 255.0
-            y_train_raw = train_labels_flat[train_idx]
-            
-            # Map labels: Cat (3) -> 0, Dog (5) -> 1, Neither -> 2
-            y_train = np.zeros_like(y_train_raw)
-            y_train[y_train_raw == 3] = 0
-            y_train[y_train_raw == 5] = 1
-            y_train[(y_train_raw != 3) & (y_train_raw != 5)] = 2
-            
-            # Filter validation data (balance to 1,000 samples per class)
-            cat_test_idx = np.where(test_labels_flat == 3)[0]
-            dog_test_idx = np.where(test_labels_flat == 5)[0]
-            neither_test_idx = np.where((test_labels_flat != 3) & (test_labels_flat != 5))[0]
-            sampled_neither_test_idx = np.random.choice(neither_test_idx, len(cat_test_idx), replace=False)
-            
-            # Combine test data
-            test_idx = np.concatenate([cat_test_idx, dog_test_idx, sampled_neither_test_idx])
-            np.random.shuffle(test_idx)
-            
-            x_test = test_images[test_idx] / 255.0
-            y_test_raw = test_labels_flat[test_idx]
-            
-            y_test = np.zeros_like(y_test_raw)
-            y_test[y_test_raw == 3] = 0
-            y_test[y_test_raw == 5] = 1
-            y_test[(y_test_raw != 3) & (y_test_raw != 5)] = 2
-            
+        TRAINING_STATUS["status_message"] = "Preprocessing and balancing dataset..."
+        
+        # Flatten label dimensions
+        train_labels_flat = train_labels.flatten()
+        test_labels_flat = test_labels.flatten()
+        
+        # Filter indices: Cat=3, Dog=5, Neither=anything else
+        cat_train_idx = np.where(train_labels_flat == 3)[0]
+        dog_train_idx = np.where(train_labels_flat == 5)[0]
+        neither_train_idx = np.where((train_labels_flat != 3) & (train_labels_flat != 5))[0]
+        
+        # Balance dataset to 5,000 samples per class
+        np.random.seed(42)
+        sampled_neither_train_idx = np.random.choice(neither_train_idx, len(cat_train_idx), replace=False)
+        
+        # Combine training data
+        train_idx = np.concatenate([cat_train_idx, dog_train_idx, sampled_neither_train_idx])
+        np.random.shuffle(train_idx)
+        
+        x_train = train_images[train_idx] / 255.0
+        y_train_raw = train_labels_flat[train_idx]
+        
+        # Map labels: Cat (3) -> 0, Dog (5) -> 1, Neither -> 2
+        y_train = np.zeros_like(y_train_raw)
+        y_train[y_train_raw == 3] = 0
+        y_train[y_train_raw == 5] = 1
+        y_train[(y_train_raw != 3) & (y_train_raw != 5)] = 2
+        
+        # Filter validation data (balance to 1,000 samples per class)
+        cat_test_idx = np.where(test_labels_flat == 3)[0]
+        dog_test_idx = np.where(test_labels_flat == 5)[0]
+        neither_test_idx = np.where((test_labels_flat != 3) & (test_labels_flat != 5))[0]
+        sampled_neither_test_idx = np.random.choice(neither_test_idx, len(cat_test_idx), replace=False)
+        
+        # Combine test data
+        test_idx = np.concatenate([cat_test_idx, dog_test_idx, sampled_neither_test_idx])
+        np.random.shuffle(test_idx)
+        
+        x_test = test_images[test_idx] / 255.0
+        y_test_raw = test_labels_flat[test_idx]
+        
+        y_test = np.zeros_like(y_test_raw)
+        y_test[y_test_raw == 3] = 0
+        y_test[y_test_raw == 5] = 1
+        y_test[(y_test_raw != 3) & (y_test_raw != 5)] = 2
+        
         TRAINING_STATUS["dataset_size"] = len(x_train)
         TRAINING_STATUS["status_message"] = "Initializing model..."
         
@@ -211,7 +200,7 @@ def run_training_sync(epochs=10, batch_size=64, base_dir="backend", use_syntheti
     finally:
         TRAINING_STATUS["is_training"] = False
 
-def start_training_async(epochs=10, use_synthetic=False, base_dir="backend"):
+def start_training_async(epochs=10, base_dir="backend"):
     """
     Starts training thread in background.
     """
@@ -219,7 +208,7 @@ def start_training_async(epochs=10, use_synthetic=False, base_dir="backend"):
     if training_lock.acquire(blocking=False):
         def thread_target():
             try:
-                run_training_sync(epochs=epochs, use_synthetic=use_synthetic, base_dir=base_dir)
+                run_training_sync(epochs=epochs, base_dir=base_dir)
             finally:
                 training_lock.release()
                 
